@@ -38,11 +38,11 @@ public class DisplayUserInput extends HttpServlet {
 		out.println("	</div>");
 		out.println("	<div class=\"block\">");
 		out.println("		<label for=\"password\">Password:</label>");
-		out.println("		<input type=\"password\" name=\"password\">");
+		out.println("		<input type=\"text\" name=\"password\">");
 		out.println("	</div>");
 		out.println("	<div class=\"block\">");
 		out.println("		<label for=\"confirmPassword\">Confirm Password:</label>");
-		out.println("		<input type=\"password\" name=\"confirmPassword\">");
+		out.println("		<input type=\"text\" name=\"confirmPassword\">");
 		out.println("	</div>");
 		out.println("	<div class=\"block\">");
 		out.println("		<label for=\"picture\">Upload Your Picture:</label>");
@@ -71,32 +71,38 @@ public class DisplayUserInput extends HttpServlet {
 		out.println("		<label for=\"address\">Address:</label>");
 		out.println("		<textarea name=\"address\"></textarea>");
 		out.println("	</div>");
-		out.println("	<div class=\"block center\">");
-		out.println("		<input type=\"submit\" value=\"Submit\">");
-		out.println("	</div>");
-		out.println("	<div>");
-		out.println("		<p id=\"displayInput\"></p>");
-		out.println("		<p id=\"displayPicture\"></p>");
-		out.println("		<p id=\"displayEmail\"></p>");
-		out.println("		<p id=\"displayPassword\"></p>");
-		out.println("		<p id=\"displayConfirmPassword\"></p>");
-		out.println("		<p id=\"displayGender\"></p>");
-		out.println("		<p id=\"displayCountry\"></p>");
-		out.println("		<p id=\"displayHobby\"></p>");
-		out.println("		<p id=\"displayAddress\"></p>");
-		out.println("	</div>");
-		out.println("</body>");
-		out.println("</html>");
+		out.println("	<form method=\"post\">");
+		out.println("		<div class=\"block center\">");
+		out.println("			<input type=\"submit\" name=\"submit\" value=\"Submit\">");
+		out.println("		</div>");
+		out.println("	</form>");
+		// out.println("	<div>");
+		// out.println("		<p id=\"displayInput\"></p>");
+		// out.println("		<p id=\"displayPicture\"></p>");
+		// out.println("		<p id=\"displayEmail\"></p>");
+		// out.println("		<p id=\"displayPassword\"></p>");
+		// out.println("		<p id=\"displayConfirmPassword\"></p>");
+		// out.println("		<p id=\"displayGender\"></p>");
+		// out.println("		<p id=\"displayCountry\"></p>");
+		// out.println("		<p id=\"displayHobby\"></p>");
+		// out.println("		<p id=\"displayAddress\"></p>");
+		// out.println("	</div>");
 
-		
-		Enumeration<String> inputs = request.getParameterNames();
-		while (inputs.hasMoreElements()) {
-			String inputName = (String)inputs.nextElement();
-			String[] parameterValues = request.getParameterValues(inputName);
-			for (int i = 0; parameterValues != null && i < parameterValues.length; i++) {
-				System.out.println(inputName + ": " + parameterValues[i] + "\t");
+		String action = request.getParameter("submit");
+		if (action.equals("submit")) {
+			Enumeration<String> inputs = request.getParameterNames();
+			while (inputs.hasMoreElements()) {
+				String inputName = (String)inputs.nextElement();
+				String[] parameterValues = request.getParameterValues(inputName);
+				for (int i = 0; parameterValues != null && i < parameterValues.length; i++) {
+					System.out.println(inputName + ": " + parameterValues[i] + "\t");
+					out.println("<div>" + inputName + ": " + parameterValues[i] + "</div>");
+				}
 			}
 		}
+
+		out.println("</body>");
+		out.println("</html>");
 	}
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)

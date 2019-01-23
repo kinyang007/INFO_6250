@@ -61,9 +61,11 @@
 		out.println("		<label for=\"address\">Address:</label>");
 		out.println("		<textarea name=\"address\"></textarea>");
 		out.println("	</div>");
-		out.println("	<div class=\"block center\">");
-		out.println("		<input type=\"submit\" value=\"Submit\">");
-		out.println("	</div>");
+		out.println("	<form method=\"post\">");
+		out.println("		<div class=\"block center\">");
+		out.println("			<input type=\"submit\" name=\"submit\" value=\"Submit\">");
+		out.println("		</div>");
+		out.println("	</form>");
 		out.println("	<div>");
 		out.println("		<p id=\"displayInput\"></p>");
 		out.println("		<p id=\"displayPicture\"></p>");
