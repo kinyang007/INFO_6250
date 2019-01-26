@@ -15,6 +15,10 @@
 		<servlet-name>Part5</servlet-name>
 		<servlet-class>DisplayUserInputPart5</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>Part6</servlet-name>
+		<servlet-class>DisplayChildren</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>Part2</servlet-name>
@@ -32,10 +36,14 @@
 		<servlet-name>Part5</servlet-name>
 		<url-pattern>/part5</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Part6</servlet-name>
+		<url-pattern>/part6</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>ViewCart</servlet-name>
-		<servlet-class>Part7/ViewCart</servlet-class>
+		<servlet-class>ViewCart</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ViewCart</servlet-name>

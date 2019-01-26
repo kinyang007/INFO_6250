@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Childrens</title>
+</head>
+
+<script type="text/javascript">
+function operate() {
+	var amount = document.getElementById("amount");
+	var count = parseInt(amount.value);
+	document.write("<form action=\"../part6\" method=\"post\">");
+	for (i = 0; i < count; i++) {
+		document.write("<label>Please enter the name of child number " + i + "</label><br/>");
+		document.write("<input type=\"text\" name=\"name\"><br/><br/>");
+	}
+	document.write("<input type=\"submit\" name=\"submit\" value=\"Submit Query\">");
+	document.write("</form>");
+}
+</script>
+
+<body>
+	<div>
+		<label>How many children do you have?</label>
+		<input type="text" name="amount" id="amount"><br/>
+		<input type="submit" name="submit" value="Submit Query" onclick="operate()"><br/>
+	</div>
+</body>
+</html>
