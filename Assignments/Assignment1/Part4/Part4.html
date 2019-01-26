@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<title>Display User Input</title>
+<style>
+.block {
+	width: 500px;
+	display: block;
+	margin: 5px 0;
+}
+.center {
+	text-align: center;
+}
+label {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+input, textarea, select {
+	vertical-align: top;
+}
+</style>
+</head>
+
+<body>
+	<form action="part4" method="post">
+		<div class="block">
+			<label for="email">Email:</label>
+			<input type="text" name="Email">
+		</div>
+		<div class="block">
+			<label for="password">Password:</label>
+			<input type="password" name="Password">
+		</div>
+		<div class="block">
+			<label for="confirmPassword">Confirm Password:</label>
+			<input type="password" name="ConfirmPassword">
+		</div>
+<!--
+		<div class="block">
+			<label for="picture">Upload Your Picture:</label>
+			<input type="file" name="picture" accept="image/*">
+		</div>
+-->
+		<div class="block">
+			<label for="gender">Gender:</label>
+			<input type="radio" name="Gender" value="Male" checked>Male
+			<input type="radio" name="Gender" value="Female">Female
+		</div>
+		<div class="block">
+			<label for="country">Country:</label>
+			<select name="Country">
+				<option value="United Kingdom">United Kingdom</option>
+				<option value="United States">United States</option>
+				<option value="China">China</option>
+				<option value="India">India</option>
+			</select>
+		</div>
+		<div class="block">
+			<label for="hobby">Hobby:</label>
+			<input type="checkbox" name="Hobby" value="Cricket">Cricket
+			<input type="checkbox" name="Hobby" value="Football">Football
+		</div>
+		<div class="block">
+			<label for="address">Address:</label>
+			<textarea name="Address"></textarea>
+		</div>
+		<div class="block center">
+			<input type="submit" name="submit" value="Submit">
+		</div>
+	</form>
+</body>
+</html>
+	

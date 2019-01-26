@@ -3,7 +3,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.*;
 
-public class DisplayUserInput extends HttpServlet {
+public class DisplayUserInputPart3 extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) 
 		throws ServletException, IOException {
 
@@ -16,7 +16,6 @@ public class DisplayUserInput extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		String confirmPassword = request.getParameter("confirmPassword");
-		// String picture = request.getParameter("picture");
 		String gender = request.getParameter("gender");
 		String country = request.getParameter("country");
 		String[] hobby = request.getParameterValues("hobby");
@@ -30,7 +29,6 @@ public class DisplayUserInput extends HttpServlet {
 		out.println("<p>Email: " + email + "</p>");
 		out.println("<p>Password: " + password + "</p>");
 		out.println("<p>Confirm Password: " + confirmPassword + "</p>");
-		// out.println("<p>Picture: " + picture + "</p>");
 		out.println("<p>Gender: " + gender + "</p>");
 		out.println("<p>Country: " + country + "</p>");
 		out.println("<p>Hobby: ");

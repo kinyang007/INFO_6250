@@ -1,0 +1,48 @@
+<web-app>
+	<servlet>
+		<servlet-name>Part2</servlet-name>
+		<servlet-class>DisplayRequestHeaders</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Part3</servlet-name>
+		<servlet-class>DisplayUserInputPart3</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Part4</servlet-name>
+		<servlet-class>DisplayUserInputPart4</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Part5</servlet-name>
+		<servlet-class>DisplayUserInputPart5</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Part2</servlet-name>
+		<url-pattern>/part2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Part3</servlet-name>
+		<url-pattern>/part3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Part4</servlet-name>
+		<url-pattern>/part4</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Part5</servlet-name>
+		<url-pattern>/part5</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ViewCart</servlet-name>
+		<servlet-class>Part7/ViewCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewCart</servlet-name>
+		<url-pattern>/ViewCart</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
