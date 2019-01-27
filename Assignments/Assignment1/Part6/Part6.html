@@ -10,7 +10,7 @@ function operate() {
 	var amount = document.getElementById("amount");
 	var count = parseInt(amount.value);
 	document.write("<form action=\"../part6\" method=\"post\">");
-	for (i = 0; i < count; i++) {
+	for (i = 1; i <= count; i++) {
 		document.write("<label>Please enter the name of child number " + i + "</label><br/>");
 		document.write("<input type=\"text\" name=\"name\"><br/><br/>");
 	}

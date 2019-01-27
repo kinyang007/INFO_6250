@@ -6,6 +6,13 @@
 </head>
 
 <script type="text/javascript">
+function submitForm() {
+	var form = document.getElementById("pass");
+	form.action = "../ViewCart";
+	form.method = "post";
+	form.submit();
+}
+
 function result() {
 	var books = document.getElementsByName("books");
 	var output = "";
@@ -13,19 +20,20 @@ function result() {
 	for (i = 0; i < books.length; i++) {
 		if (books[i].checked) {
 			output += "<p>- " + books[i].value + "</p>";
-			hidden += "<input type=\"hidden\" name=\"objects\ value=\"" + books[i].value + "\">";
+			hidden += "<input type=\"hidden\" name=\"items\" value=\"" + books[i].value + "\">";
 		}
 	}
-	
+	document.write("<form id=\"pass\">");
+	document.write(hidden);
+	document.write("</form>");
 	document.write("<h2>The following item has been added to your shopping cart successfully</h2>");
 	document.write(output);
 	document.write("<p>");
-	document.write("[<a href=\"../ViewCart\">View Cart</a>] ");
+	document.write("[<a onclick=\"submitForm();\" href=\"#\">View Cart</a>] ");
 	document.write("[<a href=\"books.html\">Go to Books Page</a>] ");
 	document.write("[<a href=\"music.html\">Go to Music Page</a>] ");
 	document.write("[<a href=\"computers.html\">Go to Computers Page</a>] ");
 	document.write("</p>");
-	document.write(hidden);
 }
 </script>
 

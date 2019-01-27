@@ -1,0 +1,22 @@
+<web-app>
+	<servlet>
+        <servlet-name>Part1</servlet-name>
+        <servlet-class>Lab1_Part1</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>Part2</servlet-name>
+        <servlet-class>Lab1_Part2</servlet-class>
+    </servlet>    
+	
+	<servlet-mapping>
+        <servlet-name>Part1</servlet-name>
+        <url-pattern>/part1</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>Part2</servlet-name>
+        <url-pattern>/part2</url-pattern>
+    </servlet-mapping>
+	<welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
