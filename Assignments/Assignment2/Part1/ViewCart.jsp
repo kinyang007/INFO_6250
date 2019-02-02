@@ -14,7 +14,7 @@
 		}
 	%>
 	<h2 align="center">View Your Cart</h2>
-	<form action="/Assignment2/CartOperation" action="get">
+	<form action="/Assignment2/CartOperation" method="get">
 		<table border=1 align="center">
 			<tr><th>Object<th>Amount
 			<%for (Map.Entry<String, Integer> object : cart.entrySet()) {%>
