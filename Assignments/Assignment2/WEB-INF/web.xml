@@ -1,0 +1,14 @@
+<web-app>
+	<servlet>
+		<servlet-name>CartOperation</servlet-name>
+		<servlet-class>CartOperation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartOperation</servlet-name>
+		<url-pattern>/CartOperation</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
