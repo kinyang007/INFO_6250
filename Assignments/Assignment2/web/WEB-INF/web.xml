@@ -15,6 +15,14 @@
         <servlet-name>DisplayExcel</servlet-name>
         <servlet-class>Part6.DisplayExcel</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MovieOperation</servlet-name>
+        <servlet-class>Part7.MovieOperation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddBooks</servlet-name>
+        <servlet-class>Part8.AddBooks</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CartOperation</servlet-name>
         <url-pattern>/CartOperation</url-pattern>
@@ -26,6 +34,14 @@
     <servlet-mapping>
         <servlet-name>DisplayExcel</servlet-name>
         <url-pattern>/DisplayExcel</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MovieOperation</servlet-name>
+        <url-pattern>/MovieOperation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddBooks</servlet-name>
+        <url-pattern>/AddBooks</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

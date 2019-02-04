@@ -17,7 +17,6 @@ public class DisplayCSV extends HttpServlet {
     private static final String CSV_JDBC_DRIVER = "org.relique.jdbc.csv.CsvDriver";
     private static final String CSV_JDBC_HEADER = "jdbc:relique:csv:";
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
