@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <head>
+        <title>Movie Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" type="text/javascript">
+            function redirect() {
+                var selected = document.getElementById("operation");
+                if (selected.value == "browse") {
+                    window.location.href = "browse.html";
+                } else if (selected.value == "add") {
+                    window.location.href = "add.html";
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to our Movie Store</h1>
+        <p>Please make your selection below</p>
+        <select id="operation">
+            <option value="browse">Browse Movies</option>
+            <option value="add">Add New Movie to Database</option>
+        </select>
+        <button type="button" onclick="redirect()">Send</button>
+    </body>
+

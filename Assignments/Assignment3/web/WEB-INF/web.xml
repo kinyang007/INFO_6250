@@ -7,9 +7,25 @@
         <servlet-name>CartOperation</servlet-name>
         <servlet-class>Part5.CartOperation</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetCSV</servlet-name>
+        <servlet-class>Part6.GetCSV</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MovieController</servlet-name>
+        <servlet-class>Part7.MovieController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CartOperation</servlet-name>
         <url-pattern>/CartOperation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCSV</servlet-name>
+        <url-pattern>/GetCSV</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MovieController</servlet-name>
+        <url-pattern>/MovieController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
