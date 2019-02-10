@@ -8,7 +8,6 @@ package Part5;
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-import javax.servlet.annotation.*;
 import java.util.*;
 
 
@@ -16,8 +15,7 @@ import java.util.*;
  *
  * @author Administrator
  */
-@WebServlet(name = "CartOperation", urlPatterns = {"/CartOperation"})
-public class CartOperation extends HttpServlet {
+public class CartController extends HttpServlet {
 
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -48,7 +46,7 @@ public class CartOperation extends HttpServlet {
             }
         }
         session.setAttribute("cart", cart);
-        request.getRequestDispatcher("ViewCart.jsp").forward(request, response);
+        request.getRequestDispatcher("Part5/ViewCart.jsp").forward(request, response);
     }
 
     /**
@@ -67,12 +65,20 @@ public class CartOperation extends HttpServlet {
             items = request.getParameterValues("music");
 	if (items == null)
             items = request.getParameterValues("computers");
-		
+        
         HttpSession session = request.getSession();
 	Cart cart = (Cart)session.getAttribute("cart");
 	if (cart == null) {
             cart = new Cart();
 	}
+        
+        if (items == null) {
+            session.setAttribute("items", items);
+            session.setAttribute("cart", cart);
+            request.getRequestDispatcher("Part5/AddSuccessful.jsp").forward(request, response);
+            return;
+        }
+        
 	for (String name : items) {
             Item item = cart.findItem(name);
             if (item != null) {

@@ -13,13 +13,18 @@
         <title>Add Item</title>
     </head>
     <body>
-        <jsp:useBean id="items" type="String[]" scope="session"></jsp:useBean>
-        <c:if test="${items != null}">
-            <h2>The following item has been added to your shopping cart successfully</h2>
-            <c:forEach var="name" items="${items}">
-                <p>- ${name}</p>
-            </c:forEach>
-        </c:if>
+        <c:set var="items" value="${sessionScope.items}"/>
+        <c:choose>
+            <c:when test="${items != null}">
+                <h2>The following item has been added to your shopping cart successfully</h2>
+                <c:forEach var="name" items="${items}">
+                    <p>- ${name}</p>
+                </c:forEach>
+            </c:when>
+            <c:otherwise>
+                <h2>Please add some item to your cart</h2>  
+            </c:otherwise>
+        </c:choose>
         <p>
             [<a href="Part5/ViewCart.jsp">View Cart</a>] 
             [<a href="books.html">Go to Books Page</a>] 

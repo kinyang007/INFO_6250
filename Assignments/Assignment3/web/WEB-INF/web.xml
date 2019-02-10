@@ -4,8 +4,8 @@
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     <servlet>
-        <servlet-name>CartOperation</servlet-name>
-        <servlet-class>Part5.CartOperation</servlet-class>
+        <servlet-name>CartController</servlet-name>
+        <servlet-class>Part5.CartController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>GetCSV</servlet-name>
@@ -16,8 +16,8 @@
         <servlet-class>Part7.MovieController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CartOperation</servlet-name>
-        <url-pattern>/CartOperation</url-pattern>
+        <servlet-name>CartController</servlet-name>
+        <url-pattern>/CartController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GetCSV</servlet-name>

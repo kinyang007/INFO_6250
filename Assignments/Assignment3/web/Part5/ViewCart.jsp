@@ -14,9 +14,9 @@
         <title>View Cart</title>
     </head>
     <body>
-        <jsp:useBean id="cart" type="Part5.Cart" scope="session"></jsp:useBean>
+        <c:set var="cart" value="${sessionScope.cart}"/>
         <h2 align="center">View Your Cart</h2>
-        <form action="/Assignment2/CartOperation" method="get">
+        <form action="/Assignment3/CartController" method="get">
             <table border=1 align="center">
                 <tr/><th/>Object<th/>Amount
                 <c:if test="${cart != null}">
@@ -31,5 +31,10 @@
                 <input type="submit" name="Submit" value="Submit">
             </div>
         </form>
+        <p>
+            [<a href="books.html">Go to Books Page</a>] 
+            [<a href="music.html">Go to Music Page</a>] 
+            [<a href="computers.html">Go to Computers Page</a>] 
+        </p>
     </body>
 </html>
