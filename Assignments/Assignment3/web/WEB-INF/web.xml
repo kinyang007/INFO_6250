@@ -32,4 +32,24 @@
             30
         </session-timeout>
     </session-config>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Part7</web-resource-name>
+            <url-pattern>/Part7/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>tomcat</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-role>
+        <role-name>tomcat</role-name>
+    </security-role>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/admin/login.jsp</form-login-page>
+            <form-error-page>/admin/login-error.html</form-error-page>
+        </form-login-config>
+    </login-config>
 </web-app>
