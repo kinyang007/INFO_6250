@@ -5,14 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%
-    response.setHeader("Cache-Control", "no-store,no-cache");
-    response.setHeader("Pragma", "no-cache");
-    response.setDateHeader("Expires", -1);
-    if (request.getRemoteUser() != null) {
-        response.sendRedirect("/admin/login.jsp");
-    }
-%>
 <!DOCTYPE html>
 <html>
     <head>

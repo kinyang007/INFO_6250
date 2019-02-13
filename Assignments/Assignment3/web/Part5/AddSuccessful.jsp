@@ -26,10 +26,10 @@
             </c:otherwise>
         </c:choose>
         <p>
-            [<a href="Part5/ViewCart.jsp">View Cart</a>] 
-            [<a href="books.html">Go to Books Page</a>] 
-            [<a href="music.html">Go to Music Page</a>] 
-            [<a href="computers.html">Go to Computers Page</a>] 
+            [<a href="/Assignment3/Part5/ViewCart.jsp">View Cart</a>] 
+            [<a href="/Assignment3/Part5/books.html">Go to Books Page</a>] 
+            [<a href="/Assignment3/Part5/music.html">Go to Music Page</a>] 
+            [<a href="/Assignment3/Part5/computers.html">Go to Computers Page</a>] 
         </p>
     </body>
 </html>
