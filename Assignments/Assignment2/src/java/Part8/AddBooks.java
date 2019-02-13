@@ -54,19 +54,24 @@ public class AddBooks extends HttpServlet {
         }
         // database operation
         Connection connection = null;
-        Statement statement = null;
+        PreparedStatement statement = null;
         try {
             Class.forName(JDBC_DRIVER);
             connection = DriverManager.getConnection(DB_URL, user, password);
-            statement = connection.createStatement();
+            String query = "insert into books (isbn, title, authors, price) value (?,?,?,?)";
+            statement = connection.prepareStatement(query);
             for (int i = 0; i < count; i++) {
-                String query = "insert into books (isbn, title, authors, price) value ('" + 
-                        isbn.get(i) + "', '" + title.get(i) + "', '" + authors.get(i) + "', " + prices.get(i) + ")"; 
-                int result = statement.executeUpdate(query);
+                statement.setString(1, isbn.get(i));
+                statement.setString(2, title.get(i));
+                statement.setString(3, authors.get(i));
+                statement.setDouble(4, Double.parseDouble(prices.get(i)));
+                int result = statement.executeUpdate();
                 if (result < 0) {
                     throw new Exception("Add Failed!");
                 }
             }
+            statement.close();
+            connection.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
