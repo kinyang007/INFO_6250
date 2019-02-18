@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/web-project/3">
+            <name xmlns="http://www.netbeans.org/ns/project/1">Assignment4</name>
+            <minimum-ant-version xmlns="http://www.netbeans.org/ns/project/1">1.6.5</minimum-ant-version>
+            <web-module-libraries xmlns="http://www.netbeans.org/ns/project/1">
+                <library xmlns="http://www.netbeans.org/ns/web-project/3" dirs="200">
+                    <file xmlns="http://www.netbeans.org/ns/project/1">${libs.spring-framework400.classpath}</file>
+                    <path-in-war xmlns="http://www.netbeans.org/ns/project/1">WEB-INF/lib</path-in-war>
+                </library>
+                <library xmlns="http://www.netbeans.org/ns/web-project/3" dirs="200">
+                    <file xmlns="http://www.netbeans.org/ns/project/1">${libs.jstl.classpath}</file>
+                    <path-in-war xmlns="http://www.netbeans.org/ns/project/1">WEB-INF/lib</path-in-war>
+                </library>
+            </web-module-libraries>
+            <web-module-additional-libraries xmlns="http://www.netbeans.org/ns/project/1"/>
+            <source-roots xmlns="http://www.netbeans.org/ns/project/1">
+                <root xmlns="http://www.netbeans.org/ns/web-project/3" id="src.dir" name="源包"/>
+            </source-roots>
+            <test-roots xmlns="http://www.netbeans.org/ns/project/1">
+                <root xmlns="http://www.netbeans.org/ns/web-project/3" id="test.src.dir" name="测试包"/>
+            </test-roots>
+        </data>
+        <spring-data xmlns="http://www.netbeans.org/ns/spring-data/1">
+            <config-files xmlns="http://www.netbeans.org/ns/project/1">
+                <config-file xmlns="http://www.netbeans.org/ns/spring-data/1">web/WEB-INF/applicationContext.xml</config-file>
+                <config-file xmlns="http://www.netbeans.org/ns/spring-data/1">web/WEB-INF/dispatcher-servlet.xml</config-file>
+            </config-files>
+            <config-file-groups xmlns="http://www.netbeans.org/ns/project/1">
+                <config-file-group xmlns="http://www.netbeans.org/ns/spring-data/1" name="默认组">
+                    <config-file xmlns="http://www.netbeans.org/ns/project/1">web/WEB-INF/applicationContext.xml</config-file>
+                    <config-file xmlns="http://www.netbeans.org/ns/project/1">web/WEB-INF/dispatcher-servlet.xml</config-file>
+                </config-file-group>
+            </config-file-groups>
+        </spring-data>
+    </configuration>
+</project>
