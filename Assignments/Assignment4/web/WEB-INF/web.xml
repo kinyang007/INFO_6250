@@ -27,8 +27,8 @@
     
     <jsp-config>
         <taglib>
-            <taglib-uri>/WEB-INF/tlds/CSVReader</taglib-uri>
-            <taglib-location>/WEB-INF/tlds/CSVReader.tld</taglib-location>
+            <taglib-uri>/WEB-INF/tlds/csvOperator</taglib-uri>
+            <taglib-location>/WEB-INF/tlds/csvOperator.tld</taglib-location>
         </taglib>
     </jsp-config>
 </web-app>
