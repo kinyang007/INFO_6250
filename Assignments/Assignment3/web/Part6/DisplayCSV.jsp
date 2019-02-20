@@ -19,12 +19,12 @@
         <h1 align="center">${filename}.csv</h1>
         <table border="1">
             <tr/>
-            <c:forEach var="columnName" items="${titles}">
+            <c:forEach var="columnName" items="${titles.row}">
                 <th/>${columnName}
             </c:forEach>
-            <c:forEach var="row" items="${results}">
+            <c:forEach var="row" items="${results.table}">
                 <tr/>
-                <c:forEach var="cell" items="${row}">
+                <c:forEach var="cell" items="${row.row}">
                     <td/>${cell}
                 </c:forEach>
             </c:forEach>

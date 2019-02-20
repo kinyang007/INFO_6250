@@ -41,21 +41,21 @@ public class GetCSV extends HttpServlet {
             ResultSetMetaData data = results.getMetaData();
             // get titles
             int columnCount = data.getColumnCount();
-            String[] titles = new String[columnCount];
+            Row titles = new Row(columnCount);
             for (int i = 1; i <= columnCount; i++) {
                 String title = data.getColumnName(i);
-                titles[i-1] = title;
+                titles.getRow()[i-1] = title;
             }
             session.setAttribute("titles", titles);
             // get results 
-            List<String[]> result = new ArrayList<>();
+            Table result = new Table();
             while (results.next()) {
-                String[] row = new String[columnCount];
+                Row row = new Row(columnCount);
                 for (int i = 1; i <= columnCount; i++) {
                     String value = results.getString(i);
-                    row[i-1] = value;
+                    row.getRow()[i-1] = value;
                 }
-                result.add(row);
+                result.addRow(row);
             }
             session.setAttribute("results", result);
             results.close();
