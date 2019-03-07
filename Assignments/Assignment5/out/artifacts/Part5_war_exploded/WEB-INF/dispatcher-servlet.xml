@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/View/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="quiz.htm">QuizController</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="QuizController" class="Controller.QuizController">
+        <property name="pages">
+            <list>
+                <value>quiz/Question1</value>
+                <value>quiz/Question2</value>
+                <value>quiz/Question3</value>
+                <value>quiz/Question4</value>
+                <value>quiz/Question5</value>
+                <value>quiz/Question6</value>
+                <value>quiz/Question7</value>
+                <value>quiz/Question8</value>
+                <value>quiz/Question9</value>
+                <value>quiz/Question10</value>
+                <value>quiz/ResultsPage</value>
+            </list>
+        </property>
+        <property name="commandClass" value="Model.Question"/>
+    </bean>
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+</beans>
