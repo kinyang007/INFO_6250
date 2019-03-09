@@ -6,6 +6,7 @@ public class Question {
     private String optionB;
     private String optionC;
     private String optionD;
+    private String userOption;
     private String correctOption;
 
     public Question() {
@@ -59,6 +60,14 @@ public class Question {
 
     public void setOptionD(String optionD) {
         this.optionD = optionD;
+    }
+
+    public String getUserOption() {
+        return userOption;
+    }
+
+    public void setUserOption(String userOption) {
+        this.userOption = userOption;
     }
 
     public String getCorrectOption() {

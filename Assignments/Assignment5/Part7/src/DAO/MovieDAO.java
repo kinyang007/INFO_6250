@@ -1,18 +1,12 @@
 package DAO;
 
-import Model.Movie;
-import org.hibernate.HibernateException;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import Model.*;
+import org.hibernate.*;
 import org.hibernate.boot.*;
 import org.hibernate.boot.registry.*;
-import org.hibernate.cfg.Configuration;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.*;
+import java.util.logging.*;
 
 public class MovieDAO {
     private SessionFactory sessionFactory;

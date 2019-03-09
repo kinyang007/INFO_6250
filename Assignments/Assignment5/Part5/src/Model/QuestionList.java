@@ -17,6 +17,10 @@ public class QuestionList {
         this.questionList = questionList;
     }
 
+    public Question getQuestion(int i) {
+        return questionList.get(i);
+    }
+
     public void addQuestion(Question question) {
         questionList.add(question);
     }

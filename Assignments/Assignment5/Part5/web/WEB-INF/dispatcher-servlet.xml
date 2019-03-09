@@ -18,20 +18,21 @@
     <bean id="QuizController" class="Controller.QuizController">
         <property name="pages">
             <list>
-                <value>quiz/Question1</value>
-                <value>quiz/Question2</value>
-                <value>quiz/Question3</value>
-                <value>quiz/Question4</value>
-                <value>quiz/Question5</value>
-                <value>quiz/Question6</value>
-                <value>quiz/Question7</value>
-                <value>quiz/Question8</value>
-                <value>quiz/Question9</value>
-                <value>quiz/Question10</value>
-                <value>quiz/ResultsPage</value>
+                <value>Question1</value>
+                <value>Question2</value>
+                <value>Question3</value>
+                <value>Question4</value>
+                <value>Question5</value>
+                <value>Question6</value>
+                <value>Question7</value>
+                <value>Question8</value>
+                <value>Question9</value>
+                <value>Question10</value>
+                <value>ResultsPage</value>
             </list>
         </property>
         <property name="commandClass" value="Model.Question"/>
+        <property name="commandName" value="question"/>
     </bean>
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 </beans>

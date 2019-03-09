@@ -9,10 +9,17 @@ import javax.servlet.http.*;
 import Model.*;
 
 public class QuizController extends AbstractWizardFormController {
-
     @Override
-    protected Map referenceData(HttpServletRequest request, int page) {
+    protected Object formBackingObject(HttpServletRequest request) {
         HttpSession session = request.getSession();
+        int page;
+        if (session.getAttribute("page") == null) {
+            page = 0;
+            session.setAttribute("page", page);
+        } else {
+            page = (int)session.getAttribute("page");
+        }
+
         QuestionList questionList;
         if (session.getAttribute("questionList") == null) {
             questionList = initializeQuestionList();
@@ -21,21 +28,7 @@ public class QuizController extends AbstractWizardFormController {
             questionList = (QuestionList)session.getAttribute("questionList");
         }
 
-        UserAnswer userAnswer;
-        if (session.getAttribute("userAnswer") == null) {
-            userAnswer = new UserAnswer(questionList);
-            session.setAttribute("userAnswer", userAnswer);
-        } else {
-            userAnswer = (UserAnswer)session.getAttribute("userAnswer");
-        }
-
-        if (page >= 1 && page <= 10) {
-            Map map = new HashMap();
-            map.put("question", questionList.getQuestionList().get(page));
-            return map;
-        } else {
-            return userAnswer.getUserAnswer();
-        }
+        return questionList.getQuestion(page);
     }
 
     @Override
@@ -54,29 +47,32 @@ public class QuizController extends AbstractWizardFormController {
             questionList = (QuestionList)session.getAttribute("questionList");
         }
 
-        UserAnswer userAnswer;
-        if (session.getAttribute("userAnswer") == null) {
-            userAnswer = new UserAnswer(questionList);
-            session.setAttribute("userAnswer", userAnswer);
-        } else {
-            userAnswer = (UserAnswer)session.getAttribute("userAnswer");
-        }
 
         if (page >= 0 && page <= 9) {
-            String answer = request.getParameter("option");
-            userAnswer.modifyUserAnswer(questionList.getQuestionList().get(page + 1), answer);
-            session.setAttribute("userAnswer", userAnswer);
+            Question question = (Question)command;
+            System.out.println("Question " + (page+1));
+            System.out.println("User Option: " + question.getUserOption());
+            questionList.getQuestion(page).setUserOption(question.getUserOption());
+            session.setAttribute("questionList", questionList);
+            session.setAttribute("page", page);
         }
     }
 
     @Override
     protected ModelAndView processFinish(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) {
         HttpSession session = request.getSession();
-        List<Question> questionList = (List<Question>)session.getAttribute("questionList");
-        Map<Question, Character> userAnswer = (Map<Question, Character>)session.getAttribute("userAnswer");
+        QuestionList questionList = (QuestionList)session.getAttribute("questionList");
+        int page = (int)session.getAttribute("page")+1;
+
+        Question question = (Question)command;
+        System.out.println("Question " + (page+1));
+        System.out.println("User Option: " + question.getUserOption());
+        questionList.getQuestion(page).setUserOption(question.getUserOption());
+        session.setAttribute("questionList", questionList);
+        session.setAttribute("page", page);
+
         ModelAndView mv = new ModelAndView("ResultsPage");
         mv.addObject("questionList", questionList);
-        mv.addObject("userAnswer", userAnswer);
         return mv;
     }
 

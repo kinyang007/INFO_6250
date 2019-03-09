@@ -13,9 +13,9 @@
 </head>
 <body>
 <h1>Result</h1>
-<c:forEach var="question" items="${questionList}">
-    <p>Question ${questionList.indexOf(question)+1}: ${question.question}</p>
-    <p>Your Answer: ${userAnswer.get(question)}</p>
+<c:forEach var="question" items="${questionList.questionList}">
+    <p>Question ${questionList.questionList.indexOf(question)+1}: ${question.question}</p>
+    <p>Your Answer: ${question.userOption}</p>
     <p>Correct Answer: ${question.correctOption}</p>
     <br/>
 </c:forEach>
