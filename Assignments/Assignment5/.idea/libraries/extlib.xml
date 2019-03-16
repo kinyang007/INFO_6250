@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="extlib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/extlib/mysql-connector-java-8.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/extlib/jstl-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -10,29 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d086500e-bf8f-4970-8017-f5e43f4774d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Assignment2/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment3/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment3/src/java/Part6/GetCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/src/java/Part6/GetCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment3/web/Part6/DisplayCSV.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/web/Part6/DisplayCSV.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Part4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Part4_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Part5_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Part5_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Part6_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Part6_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Part7_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Part7_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part4/Part4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Part4/Part4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part4/src/taglib/ReadCSVAndDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part4/src/taglib/ReadCSVAndDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part5/Part5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Part5/Part5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/Part6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/Part6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/Part7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Part7/Part7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part4_war_exploded/WEB-INF/classes/taglib/ReadCSVAndDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part4_war_exploded/WEB-INF/classes/taglib/ReadCSVAndDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part4/taglib/ReadCSVAndDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part4/taglib/ReadCSVAndDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labs/SpringMVC/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labs/SpringMVC/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part4_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part5_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part5_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part6_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part6_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part7_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/artifacts/Part7_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/dataSources/df0fed54-9274-4ee8-9db7-0dd2b0024a45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Hibernate_5_4_1_5_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Hibernate_5_4_1_5_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_3_2_18_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_3_2_18_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_4_3_18_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_MVC_3_2_18_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_MVC_3_2_18_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_MVC_4_3_18_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/libraries/Spring_MVC_4_3_18_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/Part4/Part4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/Part4/Part4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/Part5/Part5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/Part5/Part5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/Part6/Part6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/Part6/Part6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/Part7/Part7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment5/Part7/Part7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment5/out/production/Part6/META-INF/Part6.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,22 +43,25 @@
     <session id="1887432479">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="2" />
+          <entry key="java" value="4" />
           <entry key="jsp" value="4" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="2" />
+          <entry key="JAVA" value="4" />
           <entry key="JSP" value="4" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -77,11 +78,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/jsp/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="72" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Part5/src/DAO/MovieDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -121,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -138,6 +165,18 @@
             <path>
               <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
               <item name="Part5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part5" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -145,13 +184,6 @@
               <item name="Part5" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Part5" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assignment4" type="b2602c69:ProjectViewProjectNode" />
@@ -161,6 +193,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,16 +324,18 @@
       <updated>1550553895665</updated>
       <workItem from="1550553898944" duration="2157000" />
       <workItem from="1550693759022" duration="1455000" />
+      <workItem from="1552713490602" duration="1289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3612000" />
+    <option name="totallyTimeSpent" value="4901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22460657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -358,17 +393,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="72" column="59" lean-forward="true" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
-          <folding>
-            <element signature="e#2990#2991#0" expanded="true" />
-            <element signature="e#3030#3031#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/jsp/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part5/src/DAO/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part5/src/DAO/MovieDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>
