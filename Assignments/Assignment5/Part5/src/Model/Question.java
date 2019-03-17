@@ -77,4 +77,14 @@ public class Question {
     public void setCorrectOption(String correctOption) {
         this.correctOption = correctOption;
     }
+
+    public void setQuestionObject(Question question) {
+        setQuestion(question.getQuestion());
+        setOptionA(question.getOptionA());
+        setOptionB(question.getOptionB());
+        setOptionC(question.getOptionC());
+        setOptionD(question.getOptionD());
+        setUserOption(question.getUserOption());
+        setCorrectOption(question.getCorrectOption());
+    }
 }

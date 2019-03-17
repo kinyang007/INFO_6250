@@ -28,6 +28,5 @@
     <option value="add">Add New Movie to Database</option>
 </select>
 <button type="button" onclick="redirect()">Send</button>
-</form>
 </body>
 </html>

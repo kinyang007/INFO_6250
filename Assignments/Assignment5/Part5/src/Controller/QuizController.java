@@ -4,21 +4,17 @@ import org.springframework.validation.*;
 import org.springframework.web.servlet.*;
 import org.springframework.web.servlet.mvc.*;
 
-import java.util.*;
 import javax.servlet.http.*;
 import Model.*;
 
 public class QuizController extends AbstractWizardFormController {
+    private String successView;
+    private String cancelView;
+
     @Override
     protected Object formBackingObject(HttpServletRequest request) {
+        System.out.println("Form Backing Object: ");
         HttpSession session = request.getSession();
-        int page;
-        if (session.getAttribute("page") == null) {
-            page = 0;
-            session.setAttribute("page", page);
-        } else {
-            page = (int)session.getAttribute("page");
-        }
 
         QuestionList questionList;
         if (session.getAttribute("questionList") == null) {
@@ -28,7 +24,7 @@ public class QuizController extends AbstractWizardFormController {
             questionList = (QuestionList)session.getAttribute("questionList");
         }
 
-        return questionList.getQuestion(page);
+        return questionList.getQuestion(0);
     }
 
     @Override
@@ -38,23 +34,22 @@ public class QuizController extends AbstractWizardFormController {
 
     @Override
     protected void postProcessPage(HttpServletRequest request, Object command, Errors errors, int page) {
+        System.out.println("Post Process Page: ");
         HttpSession session = request.getSession();
-        QuestionList questionList;
-        if (session.getAttribute("questionList") == null) {
-            questionList = initializeQuestionList();
-            session.setAttribute("questionList", questionList);
-        } else {
-            questionList = (QuestionList)session.getAttribute("questionList");
-        }
-
+        QuestionList questionList = (QuestionList)session.getAttribute("questionList");
 
         if (page >= 0 && page <= 9) {
             Question question = (Question)command;
+//            System.out.println(getPageSessionAttributeName(request));
+            System.out.println("Current Page: " + page);
+            System.out.println("Target Page: " + getTargetPage(request, page));
             System.out.println("Question " + (page+1));
             System.out.println("User Option: " + question.getUserOption());
+
             questionList.getQuestion(page).setUserOption(question.getUserOption());
             session.setAttribute("questionList", questionList);
-            session.setAttribute("page", page);
+            // update command class
+            question.setQuestionObject(questionList.getQuestion(getTargetPage(request, page)));
         }
     }
 
@@ -62,23 +57,25 @@ public class QuizController extends AbstractWizardFormController {
     protected ModelAndView processFinish(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) {
         HttpSession session = request.getSession();
         QuestionList questionList = (QuestionList)session.getAttribute("questionList");
-        int page = (int)session.getAttribute("page")+1;
+        int page = getCurrentPage(request);
 
         Question question = (Question)command;
         System.out.println("Question " + (page+1));
         System.out.println("User Option: " + question.getUserOption());
+
         questionList.getQuestion(page).setUserOption(question.getUserOption());
         session.setAttribute("questionList", questionList);
-        session.setAttribute("page", page);
-
-        ModelAndView mv = new ModelAndView("ResultsPage");
+        ModelAndView mv = new ModelAndView(getSuccessView());
+        mv.addObject("specialPage", "finish");
         mv.addObject("questionList", questionList);
         return mv;
     }
 
     @Override
     protected ModelAndView processCancel(HttpServletRequest request, HttpServletResponse response, Object command, BindException errors) {
-        return new ModelAndView("redirect:/cancel");
+        ModelAndView mv = new ModelAndView(getCancelView());
+        mv.addObject("specialPage", "cancel");
+        return mv;
     }
 
     private QuestionList initializeQuestionList() {
@@ -164,5 +161,21 @@ public class QuizController extends AbstractWizardFormController {
                 "D"
         ));
         return questionList;
+    }
+
+    public String getSuccessView() {
+        return successView;
+    }
+
+    public void setSuccessView(String successView) {
+        this.successView = successView;
+    }
+
+    public String getCancelView() {
+        return cancelView;
+    }
+
+    public void setCancelView(String cancelView) {
+        this.cancelView = cancelView;
     }
 }

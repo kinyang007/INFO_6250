@@ -4,7 +4,7 @@ import java.util.*;
 
 public class QuestionList {
     private List<Question> questionList;
-
+    private int size;
     public QuestionList() {
         questionList = new ArrayList<>();
     }
@@ -15,6 +15,15 @@ public class QuestionList {
 
     public void setQuestionList(List<Question> questionList) {
         this.questionList = questionList;
+        size = questionList.size();
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 
     public Question getQuestion(int i) {
@@ -23,5 +32,6 @@ public class QuestionList {
 
     public void addQuestion(Question question) {
         questionList.add(question);
+        size += 1;
     }
 }
