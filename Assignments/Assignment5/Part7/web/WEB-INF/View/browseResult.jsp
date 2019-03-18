@@ -23,11 +23,5 @@
 <c:set var="request" value="${pageContext.request}"/>
 <c:set var="basePath" value="${request.scheme}://${request.serverName}:${request.serverPort}${request.contextPath}/"/>
 <a href="${basePath}index.jsp">Go Back to Main Page</a>
-<!--
-<form action="home.htm" method="post">
-    <input type="submit" name="submit" value="Go Back to Main Page"/>
-    <input type="hidden" name="page" value="result"/>
-</form>
--->
 </body>
 </html>

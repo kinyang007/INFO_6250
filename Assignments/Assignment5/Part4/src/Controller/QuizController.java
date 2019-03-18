@@ -34,7 +34,7 @@ public class QuizController {
 
         if (questionIndex != 1) {
             String lastAnswer = request.getParameter("option");
-            userAnswer.put(questionList.get(questionIndex - 2), lastAnswer.charAt(0));
+            userAnswer.put(questionList.get(questionIndex - 2), lastAnswer == null ? '\0' : lastAnswer.charAt(0));
 //            System.out.println("Question " + (questionIndex - 2) + ": ");
 //            System.out.println(lastAnswer);
             session.setAttribute("userAnswer", userAnswer);
@@ -54,7 +54,7 @@ public class QuizController {
         List<Question> questionList = (List<Question>)session.getAttribute("questionList");
         Map<Question, Character> userAnswer = (Map<Question, Character>)session.getAttribute("userAnswer");
         String lastAnswer = request.getParameter("option");
-        userAnswer.put(questionList.get(9), lastAnswer.charAt(0));
+        userAnswer.put(questionList.get(9), lastAnswer == null ? '\0' : lastAnswer.charAt(0));
         session.setAttribute("userAnswer", userAnswer);
 
         mv.addObject("page", "result");

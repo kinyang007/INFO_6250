@@ -1,10 +1,9 @@
 package Controller;
 
 import DAO.MovieDAO;
-import Model.Movie;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
-
+import Model.*;
 @SuppressWarnings("deprecation")
 public class AddController extends SimpleFormController {
 

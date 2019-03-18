@@ -1,12 +1,11 @@
 package Controller;
 
 import DAO.MovieDAO;
-import Model.Movie;
-import Model.Search;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.SimpleFormController;
 
 import java.util.List;
+import Model.*;
 
 @SuppressWarnings("deprecation")
 public class BrowseController extends SimpleFormController {

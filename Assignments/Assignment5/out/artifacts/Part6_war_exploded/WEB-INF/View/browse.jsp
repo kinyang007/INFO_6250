@@ -17,7 +17,7 @@
     <form:form commandName="search" method="post">
         <label>Keyword: </label>
         <form:input path="keyword"/><br/>
-        <form:radiobutton path="type" value="title" label="Search By Title" /><br/>
+        <form:radiobutton path="type" value="title" label="Search By Title"/><br/>
         <form:radiobutton path="type" value="actor" label="Search By Actor"/><br/>
         <form:radiobutton path="type" value="actress" label="Search By Actress"/><br/>
         <input type="submit" name="submit" value="Search Movies"/>

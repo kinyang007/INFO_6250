@@ -5,7 +5,7 @@ public class Search {
     private String keyword;
 
     public Search() {
-
+        type = "title";
     }
 
     public String getType() {

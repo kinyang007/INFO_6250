@@ -6,7 +6,7 @@ public class Movie {
     private String actor;
     private String actress;
     private String genre;
-    private int year;
+    private Integer year;
 
     public Movie() {
 
@@ -60,11 +60,11 @@ public class Movie {
         this.genre = genre;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 }

@@ -12,6 +12,9 @@
         <property name="commandClass" value="Model.Movie"/>
         <property name="formView" value="add"/>
         <property name="successView" value="addResult"/>
+        <property name="validator">
+            <bean class="Validator.MovieValidator"/>
+        </property>
     </bean>
 
     <bean name="/browse.htm" class="Controller.BrowseController">
@@ -21,17 +24,11 @@
         <property name="successView" value="browseResult"/>
     </bean>
 
-<!--
-    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
-        <property name="mappings">
-            <props>
-                <prop key="/result.htm">MovieController</prop>
-                <prop key="/home.htm">MovieController</prop>
-                <prop key="/operate.htm">MovieController</prop>
-            </props>
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>errors</value>
+            </list>
         </property>
     </bean>
-
-    <bean id="MovieController" class="Controller.MovieController"/>
--->
 </beans>
