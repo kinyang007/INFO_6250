@@ -14,46 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="824f5656-e348-4d62-93d8-a73708437244" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part4/src/Controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part4/src/Controller/QuizController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/src/Model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/src/Model/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/src/Model/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/src/Model/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/web/WEB-INF/View/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/web/WEB-INF/View/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/web/WEB-INF/View/browse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/web/WEB-INF/View/browse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/web/WEB-INF/View/browseResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/web/WEB-INF/View/browseResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part6/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Part6/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/src/Controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part7/src/Controller/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/src/Controller/BrowseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Part7/src/Controller/BrowseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/src/Model/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/src/Model/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/web/WEB-INF/View/add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/web/WEB-INF/View/addResult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/web/WEB-INF/View/browse.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/web/WEB-INF/View/browseResult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/web/WEB-INF/View/movie.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Part7/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Part7/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part4_war_exploded/WEB-INF/classes/Controller/QuizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part4_war_exploded/WEB-INF/classes/Controller/QuizController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/View/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/View/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/View/browse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/View/browse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/View/browseResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/View/browseResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/classes/Model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/classes/Model/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/classes/Model/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/classes/Model/Search.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part6_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/browse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/browse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/browseResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/browseResult.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/movie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/View/movie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Controller/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Controller/AddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Controller/BrowseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Controller/BrowseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Model/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Model/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/classes/Model/Search.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Part7_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part4/Controller/QuizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part4/Controller/QuizController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part6/Model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part6/Model/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part6/Model/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part6/Model/Search.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part7/Controller/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part7/Controller/AddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part7/Controller/BrowseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part7/Controller/BrowseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part7/Model/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part7/Model/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Part7/Model/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Part7/Model/Search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mid Term/6250.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mid Term/6250.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +60,17 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Part6/src/DAO/MovieDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -193,7 +164,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="943" />
     <option name="width" value="1554" />
     <option name="height" value="1087" />
@@ -206,9 +177,71 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part4" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part4" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Part6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,7 +252,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552875238111" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552884981689" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/extlib" />
@@ -365,11 +398,14 @@
       <workItem from="1551985615969" duration="11960000" />
       <workItem from="1552705178118" duration="729000" />
       <workItem from="1552845406689" duration="18140000" />
+      <workItem from="1554443973793" duration="383000" />
+      <workItem from="1554526232582" duration="55000" />
+      <workItem from="1554526733945" duration="669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95698000" />
+    <option name="totallyTimeSpent" value="99390000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,9 +417,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="943" y="0" width="1554" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="2506" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49842602" visible="true" weight="0.2128514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49842602" visible="true" weight="0.21872444" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.20934112" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -394,7 +431,7 @@
       <window_info id="Persistence" order="8" sideWeight="0.501574" side_tool="true" weight="0.18691589" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28331584" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28331584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,12 +448,12 @@
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.3336831" />
       <window_info anchor="bottom" id="Hibernate Console" order="17" weight="0.32948583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966533" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.4178482" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.11488144" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -462,17 +499,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/View/Question7.jsp" />
-    <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/View/Question8.jsp" />
     <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/View/Question9.jsp" />
-    <entry file="file://$PROJECT_DIR$/Part4/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Part6/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -569,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Part6/src/DAO/MovieDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Part5/web/WEB-INF/View/Question1.jsp" />
     <entry file="jar://D:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar!/javax/servlet/http/HttpSession.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/Spring MVC-3.2.18.RELEASE/spring-webmvc-3.2.18.RELEASE.jar!/org/springframework/web/servlet/mvc/AbstractWizardFormController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Part6/web/WEB-INF/View/movie.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -646,21 +664,6 @@
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Part5/src/Controller/QuizController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="998">
-          <caret line="75" column="60" lean-forward="true" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initializeQuestionList#0;class#QuizController#0" />
-            <element signature="e#6410#6411#0" expanded="true" />
-            <element signature="e#6443#6444#0" expanded="true" />
-            <element signature="e#6495#6496#0" expanded="true" />
-            <element signature="e#6539#6540#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,17 +786,6 @@
     <entry file="file://$PROJECT_DIR$/Part7/web/WEB-INF/View/add.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Part4/src/Controller/QuizController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="56" column="92" selection-start-line="56" selection-start-column="92" selection-end-line="56" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initializeQuestionList#0;class#QuizController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Part6/src/errors.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -822,6 +814,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part4/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/Spring MVC-3.2.18.RELEASE/spring-webmvc-3.2.18.RELEASE.jar!/org/springframework/web/servlet/mvc/AbstractWizardFormController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-677">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part5/src/Controller/QuizController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="63" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initializeQuestionList#0;class#QuizController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part4/src/Controller/QuizController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initializeQuestionList#0;class#QuizController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part4/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="177" selection-start-line="4" selection-start-column="132" selection-end-line="4" selection-end-column="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part4/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part6/src/DAO/MovieDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
         </state>
       </provider>
     </entry>
