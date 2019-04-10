@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="824f5656-e348-4d62-93d8-a73708437244" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Mid Term/6250.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mid Term/6250.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Part6/src/DAO/MovieDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="272">
+              <caret line="20" column="30" selection-start-line="13" selection-start-column="8" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -177,8 +176,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -400,12 +399,13 @@
       <workItem from="1552845406689" duration="18140000" />
       <workItem from="1554443973793" duration="383000" />
       <workItem from="1554526232582" duration="55000" />
-      <workItem from="1554526733945" duration="669000" />
+      <workItem from="1554526733945" duration="1276000" />
+      <workItem from="1554821464584" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99390000" />
+    <option name="totallyTimeSpent" value="100057000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,9 +418,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2506" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49842602" visible="true" weight="0.21872444" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49842602" visible="true" weight="0.22035977" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.20934112" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -453,7 +452,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.11488144" />
+      <window_info anchor="right" id="Database" order="6" weight="0.11488144" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -865,8 +864,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Part6/src/DAO/MovieDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="272">
+          <caret line="20" column="30" selection-start-line="13" selection-start-column="8" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
