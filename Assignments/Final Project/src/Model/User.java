@@ -1,37 +1,93 @@
 package Model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.sql.Date;
 import java.util.*;
 
+@Entity
+@Table(name = "user")
 public class User {
+    @Id
+    @GeneratedValue(generator = "idGenerator")
+    @GenericGenerator(name = "idGenerator", strategy = "assigned")
+    @Column(name = "user_id")
     private String id;
+
+    @Column(name = "user_name")
     private String name;
+
+    @Column(name = "review_count")
     private Integer reviewCount;
+
+    @Column(name = "yelping_since")
     private Date dateJoined;
 
+    @ElementCollection(targetClass = String.class)
+    @CollectionTable(name = "friends", joinColumns = @JoinColumn(name = "user_id"))
+    @OrderColumn(name = "")
+    @Column(name = "friend_id")
     private List<String> friends;
 
+    @Column(name = "useful")
     private Integer useful;
+
+    @Column(name = "funny")
     private Integer funny;
+
+    @Column(name = "cool")
     private Integer cool;
+
+    @Column(name = "fans")
     private Integer fans;
 
+    @ElementCollection(targetClass = Integer.class)
+    @CollectionTable(name = "elite", joinColumns = @JoinColumn(name = "user_id"))
+    @OrderColumn(name = "")
+    @Column(name = "elite_year")
     private List<Integer> elite;
 
+    @Column(name = "average_stars")
     private Double averageStars;
+
+    @Column(name = "compliment_hot")
     private Integer complimentHot;
+
+    @Column(name = "compliment_more")
     private Integer complimentMore;
+
+    @Column(name = "compliment_profile")
     private Integer complimentProfile;
+
+    @Column(name = "compliment_cute")
     private Integer complimentCute;
+
+    @Column(name = "compliment_list")
     private Integer complimentList;
+
+    @Column(name = "compliment_note")
     private Integer complimentNote;
+
+    @Column(name = "compliment_plain")
     private Integer complimentPlain;
+
+    @Column(name = "compliment_cool")
     private Integer complimentCool;
+
+    @Column(name = "compliment_funny")
     private Integer complimentFunny;
+
+    @Column(name = "compliment_writer")
     private Integer complimentWriter;
+
+    @Column(name = "compliment_photos")
     private Integer complimentPhotos;
 
+    @OneToMany()
     private List<Review> reviews;
+
+    @OneToMany()
     private List<Tip> tips;
 
     public User() {
