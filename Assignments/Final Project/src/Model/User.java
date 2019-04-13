@@ -9,85 +9,34 @@ import java.util.*;
 @Entity
 @Table(name = "user")
 public class User {
-    @Id
-    @GeneratedValue(generator = "idGenerator")
-    @GenericGenerator(name = "idGenerator", strategy = "assigned")
-    @Column(name = "user_id")
     private String id;
-
-    @Column(name = "user_name")
     private String name;
-
-    @Column(name = "review_count")
     private Integer reviewCount;
-
-    @Column(name = "yelping_since")
     private Date dateJoined;
 
-    @ElementCollection(targetClass = String.class)
-    @CollectionTable(name = "friends", joinColumns = @JoinColumn(name = "user_id"))
-    @OrderColumn(name = "")
-    @Column(name = "friend_id")
     private List<String> friends;
 
-    @Column(name = "useful")
     private Integer useful;
-
-    @Column(name = "funny")
     private Integer funny;
-
-    @Column(name = "cool")
     private Integer cool;
-
-    @Column(name = "fans")
     private Integer fans;
 
-    @ElementCollection(targetClass = Integer.class)
-    @CollectionTable(name = "elite", joinColumns = @JoinColumn(name = "user_id"))
-    @OrderColumn(name = "")
-    @Column(name = "elite_year")
     private List<Integer> elite;
 
-    @Column(name = "average_stars")
     private Double averageStars;
-
-    @Column(name = "compliment_hot")
     private Integer complimentHot;
-
-    @Column(name = "compliment_more")
     private Integer complimentMore;
-
-    @Column(name = "compliment_profile")
     private Integer complimentProfile;
-
-    @Column(name = "compliment_cute")
     private Integer complimentCute;
-
-    @Column(name = "compliment_list")
     private Integer complimentList;
-
-    @Column(name = "compliment_note")
     private Integer complimentNote;
-
-    @Column(name = "compliment_plain")
     private Integer complimentPlain;
-
-    @Column(name = "compliment_cool")
     private Integer complimentCool;
-
-    @Column(name = "compliment_funny")
     private Integer complimentFunny;
-
-    @Column(name = "compliment_writer")
     private Integer complimentWriter;
-
-    @Column(name = "compliment_photos")
     private Integer complimentPhotos;
 
-    @OneToMany()
     private List<Review> reviews;
-
-    @OneToMany()
     private List<Tip> tips;
 
     public User() {
@@ -97,6 +46,10 @@ public class User {
         tips = new ArrayList<>();
     }
 
+    @Id
+    @GeneratedValue(generator = "idGenerator")
+    @GenericGenerator(name = "idGenerator", strategy = "assigned")
+    @Column(name = "user_id")
     public String getId() {
         return id;
     }
@@ -105,6 +58,7 @@ public class User {
         this.id = id;
     }
 
+    @Column(name = "user_name")
     public String getName() {
         return name;
     }
@@ -113,6 +67,7 @@ public class User {
         this.name = name;
     }
 
+    @Column(name = "review_count")
     public Integer getReviewCount() {
         return reviewCount;
     }
@@ -121,6 +76,7 @@ public class User {
         this.reviewCount = reviewCount;
     }
 
+    @Column(name = "yelping_since")
     public Date getDateJoined() {
         return dateJoined;
     }
@@ -129,6 +85,10 @@ public class User {
         this.dateJoined = dateJoined;
     }
 
+    @ElementCollection(targetClass = String.class)
+    @CollectionTable(name = "friends", joinColumns = @JoinColumn(name = "user_id"))
+    @OrderColumn(name = "")
+    @Column(name = "friend_id")
     public List<String> getFriends() {
         return friends;
     }
@@ -137,6 +97,7 @@ public class User {
         this.friends = friends;
     }
 
+    @Column(name = "useful")
     public Integer getUseful() {
         return useful;
     }
@@ -145,6 +106,7 @@ public class User {
         this.useful = useful;
     }
 
+    @Column(name = "funny")
     public Integer getFunny() {
         return funny;
     }
@@ -153,6 +115,7 @@ public class User {
         this.funny = funny;
     }
 
+    @Column(name = "cool")
     public Integer getCool() {
         return cool;
     }
@@ -161,6 +124,7 @@ public class User {
         this.cool = cool;
     }
 
+    @Column(name = "fans")
     public Integer getFans() {
         return fans;
     }
@@ -169,6 +133,10 @@ public class User {
         this.fans = fans;
     }
 
+    @ElementCollection(targetClass = Integer.class)
+    @CollectionTable(name = "elite", joinColumns = @JoinColumn(name = "user_id"))
+    @OrderColumn(name = "")
+    @Column(name = "elite_year")
     public List<Integer> getElite() {
         return elite;
     }
@@ -177,6 +145,7 @@ public class User {
         this.elite = elite;
     }
 
+    @Column(name = "average_stars")
     public Double getAverageStars() {
         return averageStars;
     }
@@ -185,6 +154,7 @@ public class User {
         this.averageStars = averageStars;
     }
 
+    @Column(name = "compliment_hot")
     public Integer getComplimentHot() {
         return complimentHot;
     }
@@ -193,6 +163,7 @@ public class User {
         this.complimentHot = complimentHot;
     }
 
+    @Column(name = "compliment_more")
     public Integer getComplimentMore() {
         return complimentMore;
     }
@@ -201,6 +172,7 @@ public class User {
         this.complimentMore = complimentMore;
     }
 
+    @Column(name = "compliment_profile")
     public Integer getComplimentProfile() {
         return complimentProfile;
     }
@@ -209,6 +181,7 @@ public class User {
         this.complimentProfile = complimentProfile;
     }
 
+    @Column(name = "compliment_cute")
     public Integer getComplimentCute() {
         return complimentCute;
     }
@@ -217,6 +190,7 @@ public class User {
         this.complimentCute = complimentCute;
     }
 
+    @Column(name = "compliment_list")
     public Integer getComplimentList() {
         return complimentList;
     }
@@ -225,6 +199,7 @@ public class User {
         this.complimentList = complimentList;
     }
 
+    @Column(name = "compliment_note")
     public Integer getComplimentNote() {
         return complimentNote;
     }
@@ -233,6 +208,7 @@ public class User {
         this.complimentNote = complimentNote;
     }
 
+    @Column(name = "compliment_plain")
     public Integer getComplimentPlain() {
         return complimentPlain;
     }
@@ -241,6 +217,7 @@ public class User {
         this.complimentPlain = complimentPlain;
     }
 
+    @Column(name = "compliment_cool")
     public Integer getComplimentCool() {
         return complimentCool;
     }
@@ -249,6 +226,7 @@ public class User {
         this.complimentCool = complimentCool;
     }
 
+    @Column(name = "compliment_funny")
     public Integer getComplimentFunny() {
         return complimentFunny;
     }
@@ -257,6 +235,7 @@ public class User {
         this.complimentFunny = complimentFunny;
     }
 
+    @Column(name = "compliment_writer")
     public Integer getComplimentWriter() {
         return complimentWriter;
     }
@@ -265,6 +244,7 @@ public class User {
         this.complimentWriter = complimentWriter;
     }
 
+    @Column(name = "compliment_photos")
     public Integer getComplimentPhotos() {
         return complimentPhotos;
     }
@@ -273,6 +253,7 @@ public class User {
         this.complimentPhotos = complimentPhotos;
     }
 
+    @OneToMany(mappedBy = "user", targetEntity = Review.class, cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Review> getReviews() {
         return reviews;
     }
@@ -281,6 +262,7 @@ public class User {
         this.reviews = reviews;
     }
 
+    @OneToMany(mappedBy = "user", targetEntity = Tip.class, cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Tip> getTips() {
         return tips;
     }
