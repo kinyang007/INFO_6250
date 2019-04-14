@@ -1,7 +1,12 @@
 package Model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.util.*;
 
+@Entity
+@Table(name = "business")
 public class Business {
     private String id;
     private String name;
@@ -30,6 +35,10 @@ public class Business {
         tips = new ArrayList<>();
     }
 
+    @Id
+    @GeneratedValue(generator = "idGenerator")
+    @GenericGenerator(name = "idGenerator", strategy = "assigned")
+    @Column(name = "business_id")
     public String getId() {
         return id;
     }
@@ -38,6 +47,7 @@ public class Business {
         this.id = id;
     }
 
+    @Column(name = "business_name")
     public String getName() {
         return name;
     }
@@ -46,6 +56,7 @@ public class Business {
         this.name = name;
     }
 
+    @Column(name = "address")
     public String getAddress() {
         return address;
     }
@@ -54,6 +65,7 @@ public class Business {
         this.address = address;
     }
 
+    @Column(name = "city")
     public String getCity() {
         return city;
     }
@@ -62,6 +74,7 @@ public class Business {
         this.city = city;
     }
 
+    @Column(name = "state")
     public String getState() {
         return state;
     }
@@ -70,6 +83,7 @@ public class Business {
         this.state = state;
     }
 
+    @Column(name = "postal_code")
     public String getPostalCode() {
         return postalCode;
     }
@@ -78,6 +92,7 @@ public class Business {
         this.postalCode = postalCode;
     }
 
+    @Column(name = "latitude")
     public Double getLatitude() {
         return latitude;
     }
@@ -86,6 +101,7 @@ public class Business {
         this.latitude = latitude;
     }
 
+    @Column(name = "longitude")
     public Double getLongitude() {
         return longitude;
     }
@@ -94,6 +110,7 @@ public class Business {
         this.longitude = longitude;
     }
 
+    @Column(name = "stars")
     public Double getStars() {
         return stars;
     }
@@ -102,6 +119,7 @@ public class Business {
         this.stars = stars;
     }
 
+    @Column(name = "review_count")
     public Integer getReviewCount() {
         return reviewCount;
     }
@@ -110,6 +128,7 @@ public class Business {
         this.reviewCount = reviewCount;
     }
 
+    @Column(name = "is_open")
     public Short getIsOpen() {
         return isOpen;
     }
@@ -118,6 +137,10 @@ public class Business {
         this.isOpen = isOpen;
     }
 
+    @ElementCollection(targetClass = Object.class)
+
+    @CollectionTable(name = "attributes", joinColumns = @JoinColumn(name = "business_id"))
+    @Column()
     public Map<String, Object> getAttributes() {
         return attributes;
     }
@@ -126,6 +149,8 @@ public class Business {
         this.attributes = attributes;
     }
 
+    @ElementCollection(targetClass = String.class)
+    
     public List<String> getCategories() {
         return categories;
     }
