@@ -1,7 +1,5 @@
 package Model;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.*;
@@ -9,7 +7,7 @@ import java.util.*;
 @Entity
 @Table(name = "user")
 public class User {
-    private String id;
+    private Long id;
     private String name;
     private Integer reviewCount;
     private Date dateJoined;
@@ -40,21 +38,17 @@ public class User {
     private List<Tip> tips;
 
     public User() {
-        friends = new ArrayList<>();
-        elite = new ArrayList<>();
-        reviews = new ArrayList<>();
-        tips = new ArrayList<>();
+
     }
 
     @Id
-    @GeneratedValue(generator = "idGenerator")
-    @GenericGenerator(name = "idGenerator", strategy = "assigned")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id")
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

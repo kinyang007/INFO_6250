@@ -1,14 +1,12 @@
 package Model;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.sql.*;
 
 @Entity
 @Table(name = "review")
 public class Review {
-    private String reviewId;
+    private Long reviewId;
 
     private User user;
     private Business business;
@@ -25,14 +23,13 @@ public class Review {
     }
 
     @Id
-    @GeneratedValue(generator = "idGenerator")
-    @GenericGenerator(name = "idGenerator", strategy = "assigned")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "review_id")
-    public String getReviewId() {
+    public Long getReviewId() {
         return reviewId;
     }
 
-    public void setReviewId(String reviewId) {
+    public void setReviewId(Long reviewId) {
         this.reviewId = reviewId;
     }
 

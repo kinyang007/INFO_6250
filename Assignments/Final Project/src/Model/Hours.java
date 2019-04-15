@@ -1,11 +1,15 @@
 package Model;
 
+import sun.jvm.hotspot.memory.Generation;
+
 import javax.persistence.*;
 import java.sql.*;
 
 @Entity
 @Table(name = "hours")
 public class Hours {
+    private Long id;
+    private Business business;
     private String day;
     private Time startTime;
     private Time closeTime;
@@ -14,12 +18,28 @@ public class Hours {
 
     }
 
-    public Hours(String day, Time startTime, Time closeTime) {
-        this.day = day;
-        this.startTime = startTime;
-        this.closeTime = closeTime;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    public Long getId() {
+        return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "business_id")
+    public Business getBusiness() {
+        return business;
+    }
+
+    public void setBusiness(Business business) {
+        this.business = business;
+    }
+
+    @Column(name = "day")
     public String getDay() {
         return day;
     }
@@ -28,6 +48,7 @@ public class Hours {
         this.day = day;
     }
 
+    @Column(name = "start_time")
     public Time getStartTime() {
         return startTime;
     }
@@ -36,6 +57,7 @@ public class Hours {
         this.startTime = startTime;
     }
 
+    @Column(name = "close_time")
     public Time getCloseTime() {
         return closeTime;
     }

@@ -1,7 +1,5 @@
 package Model;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.util.*;
 
@@ -28,11 +26,7 @@ public class Business {
     private List<Tip> tips;
 
     public Business() {
-        attributes = new HashMap<>();
-        categories = new ArrayList<>();
-        hours = new ArrayList<>();
-        reviews = new ArrayList<>();
-        tips = new ArrayList<>();
+
     }
 
     @Id
@@ -168,6 +162,7 @@ public class Business {
         this.hours = hours;
     }
 
+    @OneToMany(mappedBy = "business", targetEntity = Review.class, cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Review> getReviews() {
         return reviews;
     }
@@ -176,6 +171,7 @@ public class Business {
         this.reviews = reviews;
     }
 
+    @OneToMany(mappedBy = "business", targetEntity = Tip.class, cascade = CascadeType.ALL, orphanRemoval = true)
     public List<Tip> getTips() {
         return tips;
     }

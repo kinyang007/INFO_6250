@@ -6,8 +6,11 @@ import java.sql.Date;
 @Entity
 @Table(name = "tip")
 public class Tip {
-    private String businessId;
-    private String userId;
+    private Long tipId;
+
+    private Business business;
+    private User user;
+
     private Date date;
     private String text;
     private Integer complimentCount;
@@ -16,30 +19,38 @@ public class Tip {
 
     }
 
-    public Tip(String businessId, String userId, Date date, String text, Integer complimentCount) {
-        this.businessId = businessId;
-        this.userId = userId;
-        this.date = date;
-        this.text = text;
-        this.complimentCount = complimentCount;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "tip_id")
+    public Long getTipId() {
+        return tipId;
     }
 
-    public String getBusinessId() {
-        return businessId;
+    public void setTipId(Long tipId) {
+        this.tipId = tipId;
     }
 
-    public void setBusinessId(String businessId) {
-        this.businessId = businessId;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "business_id")
+    public Business getBusiness() {
+        return business;
     }
 
-    public String getUserId() {
-        return userId;
+    public void setBusiness(Business business) {
+        this.business = business;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "user_id")
+    public User getUser() {
+        return user;
     }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    @Column(name = "date")
     public Date getDate() {
         return date;
     }
@@ -48,6 +59,7 @@ public class Tip {
         this.date = date;
     }
 
+    @Column(name = "text")
     public String getText() {
         return text;
     }
@@ -56,6 +68,7 @@ public class Tip {
         this.text = text;
     }
 
+    @Column(name = "compliment_count")
     public Integer getComplimentCount() {
         return complimentCount;
     }
