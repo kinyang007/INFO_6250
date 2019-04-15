@@ -1,7 +1,10 @@
 package Model;
 
+import javax.persistence.*;
 import java.sql.Date;
 
+@Entity
+@Table(name = "tip")
 public class Tip {
     private String businessId;
     private String userId;

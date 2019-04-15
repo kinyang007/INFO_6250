@@ -14,8 +14,10 @@
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">create</property>
 
-        <!--<mapping resource=""/>-->
-        <!-- DB schema will be updated if needed -->
-        <!-- <property name="hbm2ddl.auto">update</property> -->
+        <mapping class="Model.User"/>
+        <mapping class="Model.Business"/>
+        <mapping class="Model.Review"/>
+        <mapping class="Model.Tip"/>
+        <mapping class="Model.Hours"/>
     </session-factory>
 </hibernate-configuration>

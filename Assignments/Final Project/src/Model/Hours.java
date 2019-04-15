@@ -1,7 +1,10 @@
 package Model;
 
+import javax.persistence.*;
 import java.sql.*;
 
+@Entity
+@Table(name = "hours")
 public class Hours {
     private String day;
     private Time startTime;

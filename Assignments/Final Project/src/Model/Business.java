@@ -8,7 +8,7 @@ import java.util.*;
 @Entity
 @Table(name = "business")
 public class Business {
-    private String id;
+    private Long id;
     private String name;
     private String address;
     private String city;
@@ -20,30 +20,29 @@ public class Business {
     private Integer reviewCount;
     private Short isOpen;
 
-    private Map<String, Object> attributes;
+    private Map<String, String> attributes;
     private List<String> categories;
-    private Hours hours;
 
+    private List<Hours> hours;
     private List<Review> reviews;
     private List<Tip> tips;
 
     public Business() {
         attributes = new HashMap<>();
         categories = new ArrayList<>();
-        hours = new Hours();
+        hours = new ArrayList<>();
         reviews = new ArrayList<>();
         tips = new ArrayList<>();
     }
 
     @Id
-    @GeneratedValue(generator = "idGenerator")
-    @GenericGenerator(name = "idGenerator", strategy = "assigned")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "business_id")
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -137,20 +136,21 @@ public class Business {
         this.isOpen = isOpen;
     }
 
-    @ElementCollection(targetClass = Object.class)
-
+    @ElementCollection
     @CollectionTable(name = "attributes", joinColumns = @JoinColumn(name = "business_id"))
-    @Column()
-    public Map<String, Object> getAttributes() {
+    @MapKeyColumn(name = "name")
+    @Column(name = "value")
+    public Map<String, String> getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(Map<String, Object> attributes) {
+    public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }
 
-    @ElementCollection(targetClass = String.class)
-    
+    @ElementCollection
+    @CollectionTable(name = "category", joinColumns = @JoinColumn(name = "business_id"))
+    @Column(name = "category")
     public List<String> getCategories() {
         return categories;
     }
@@ -159,11 +159,12 @@ public class Business {
         this.categories = categories;
     }
 
-    public Hours getHours() {
+    @OneToMany(mappedBy = "business", targetEntity = Hours.class, cascade = CascadeType.ALL, orphanRemoval = true)
+    public List<Hours> getHours() {
         return hours;
     }
 
-    public void setHours(Hours hours) {
+    public void setHours(List<Hours> hours) {
         this.hours = hours;
     }
 
