@@ -81,7 +81,6 @@ public class User {
 
     @ElementCollection(targetClass = String.class)
     @CollectionTable(name = "friends", joinColumns = @JoinColumn(name = "user_id"))
-    @OrderColumn(name = "")
     @Column(name = "friend_id")
     public List<String> getFriends() {
         return friends;
@@ -129,7 +128,6 @@ public class User {
 
     @ElementCollection(targetClass = Integer.class)
     @CollectionTable(name = "elite", joinColumns = @JoinColumn(name = "user_id"))
-    @OrderColumn(name = "")
     @Column(name = "elite_year")
     public List<Integer> getElite() {
         return elite;

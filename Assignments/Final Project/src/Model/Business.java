@@ -18,7 +18,7 @@ public class Business {
     private Integer reviewCount;
     private Short isOpen;
 
-    private Map<String, String> attributes;
+    private List<Attribute> attributes;
     private List<String> categories;
 
     private List<Hours> hours;
@@ -130,19 +130,16 @@ public class Business {
         this.isOpen = isOpen;
     }
 
-    @ElementCollection
-    @CollectionTable(name = "attributes", joinColumns = @JoinColumn(name = "business_id"))
-    @MapKeyColumn(name = "name")
-    @Column(name = "value")
-    public Map<String, String> getAttributes() {
+    @OneToMany(mappedBy = "business", targetEntity = Attribute.class, cascade = CascadeType.ALL, orphanRemoval = true)
+    public List<Attribute> getAttributes() {
         return attributes;
     }
 
-    public void setAttributes(Map<String, String> attributes) {
+    public void setAttributes(List<Attribute> attributes) {
         this.attributes = attributes;
     }
 
-    @ElementCollection
+    @ElementCollection(targetClass = String.class)
     @CollectionTable(name = "category", joinColumns = @JoinColumn(name = "business_id"))
     @Column(name = "category")
     public List<String> getCategories() {

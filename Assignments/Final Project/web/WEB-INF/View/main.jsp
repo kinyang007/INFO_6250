@@ -8,9 +8,42 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
-
+<body class="bg-light">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/main">KSearch</a>
+    </div>
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="">Write A Comment</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <br/>
+    <h1 class="text-center">KSearch</h1>
+    <br/>
+    <form>
+        <div class="form-group">
+            <div class="input-group">
+                <input class="form-control" type="text" name="search" placeholder="Enter Business Name"/>
+                <input class="btn btn-primary" type="submit" value="Search"/>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

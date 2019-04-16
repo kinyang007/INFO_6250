@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/jstl-1.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rapid-plugins-4.0.6.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
