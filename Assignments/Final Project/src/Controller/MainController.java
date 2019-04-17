@@ -1,9 +1,13 @@
 package Controller;
 
-import Model.*;
+import java.util.*;
 import javax.servlet.http.*;
 
+import Model.Form.UserSignUp;
 import org.springframework.stereotype.*;
+import org.springframework.ui.*;
+import org.springframework.validation.*;
+import org.springframework.validation.annotation.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.*;
 
@@ -12,31 +16,17 @@ public class MainController {
 
     @RequestMapping("/main")
     public ModelAndView mainHandler(HttpServletRequest request, HttpServletResponse response) {
-        ModelAndView mv = new ModelAndView("main");
         HttpSession session = request.getSession();
-        String buttonClicked = request.getParameter("submit");
-        if (buttonClicked.equals("Login")) {
-
-        } else if (buttonClicked.equals("Sign Up")) {
-
-        }
 
         if (session.getAttribute("loggedInUser") == null) {
             session.setAttribute("loggedInUser", null);
         }
-        return mv;
+        return new ModelAndView("main");
     }
 
     @RequestMapping("/login")
     public ModelAndView loginHandler(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView mv = new ModelAndView("login");
-
-        return mv;
-    }
-
-    @RequestMapping("/signup")
-    public ModelAndView signUpHandler(HttpServletRequest request, HttpServletResponse response) {
-        ModelAndView mv = new ModelAndView("signup");
 
         return mv;
     }

@@ -14,12 +14,12 @@
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
 
-        <mapping class="Model.User"/>
-        <mapping class="Model.Business"/>
-        <mapping class="Model.Review"/>
-        <mapping class="Model.Tip"/>
-        <mapping class="Model.Hours"/>
-        <mapping class="Model.Attribute"/>
-        <mapping class="Model.UserInfo"/>
+        <mapping class="Model.Data.User"/>
+        <mapping class="Model.Data.Business"/>
+        <mapping class="Model.Data.Review"/>
+        <mapping class="Model.Data.Tip"/>
+        <mapping class="Model.Data.Hours"/>
+        <mapping class="Model.Data.Attribute"/>
+        <mapping class="Model.Data.UserInfo"/>
     </session-factory>
 </hibernate-configuration>

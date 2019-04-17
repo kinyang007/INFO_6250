@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <html>
 <head>
     <title>Sign Up</title>
@@ -35,15 +36,19 @@
     <div class="row">
         <div class="col-xs-6 col-md-4 col-center-block">
             <br/>
-            <form>
+            <form:form method="post" modelAttribute="userSignUp">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="firstName" placeholder="First Name"/><br/>
-                    <input class="form-control" type="text" name="lastName" placeholder="Last Name"/><br/>
-                    <input class="form-control" type="text" name="email" placeholder="Email"/><br/>
-                    <input class="form-control" type="password" name="password" placeholder="Password"/><br/>
+                    <form:input type="text" path="firstName" placeholder="First Name" class="form-control"/>
+                    <form:errors path="firstName" class="text-danger"/><br/>
+                    <form:input type="text" path="lastName" placeholder="Last Name" class="form-control"/>
+                    <form:errors path="lastName" class="text-danger"/><br/>
+                    <form:input type="text" path="email" placeholder="Email" class="form-control"/>
+                    <form:errors path="email" class="text-danger"/><br/>
+                    <form:input type="password" path="password" placeholder="Password" class="form-control"/>
+                    <form:errors path="password" class="text-danger"/><br/>
                     <input class="btn btn-primary btn-block" type="submit" name="submit" value="Sign Up"/><br/>
                 </div>
-            </form>
+            </form:form>
             <p class="text-right">Already On KSearch? <a href="/login">Log in</a></p>
         </div>
     </div>
