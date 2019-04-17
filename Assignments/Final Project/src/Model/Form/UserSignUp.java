@@ -27,7 +27,6 @@ public class UserSignUp {
         this.lastName = lastName;
     }
 
-    @Size(min = 1, message = "Email Should Not Be Empty")
     @Pattern(regexp = "[a-zA-Z0-9]([a-zA-Z0-9]*[._]?[a-zA-Z0-9]+)*@([a-zA-Z0-9]+[._]?)+([a-zA-Z0-9]*[.][a-zA-Z0-9]+)$",
              message = "Email pattern is invalid")
     public String getEmail() {

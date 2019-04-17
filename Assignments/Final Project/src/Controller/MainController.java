@@ -24,11 +24,4 @@ public class MainController {
         return new ModelAndView("main");
     }
 
-    @RequestMapping("/login")
-    public ModelAndView loginHandler(HttpServletRequest request, HttpServletResponse response) {
-        ModelAndView mv = new ModelAndView("login");
-
-        return mv;
-    }
-
 }

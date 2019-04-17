@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Sign Up</title>
@@ -33,9 +34,11 @@
     <br/>
     <h1 class="text-center">Sign Up for KSearch</h1>
     <h6 class="text-center">Connect with great local businesses</h6>
+    <c:if test="${failure ne null}">
+        <p class="text-center text-danger">${failure}</p>
+    </c:if>
     <div class="row">
         <div class="col-xs-6 col-md-4 col-center-block">
-            <br/>
             <form:form method="post" modelAttribute="userSignUp">
                 <div class="form-group">
                     <form:input type="text" path="firstName" placeholder="First Name" class="form-control"/>

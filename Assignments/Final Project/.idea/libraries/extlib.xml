@@ -3,7 +3,6 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/jstl-1.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.15.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/hibernate-validator-4.3.1.final-1.0.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/validation-api-1.0.0.ga.jar!/" />
     </CLASSES>
     <JAVADOC />

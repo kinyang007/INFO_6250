@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <html>
 <head>
     <title>Login</title>
@@ -37,13 +38,15 @@
     <div class="row">
         <div class="col-xs-6 col-md-4 col-center-block">
             <br/>
-            <form>
+            <form:form method="post" modelAttribute="userLogin">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="email" placeholder="Enter Email"/><br/>
-                    <input class="form-control" type="password" name="password" placeholder="Enter Password"/><br/>
+                    <form:input type="text" path="email" placeholder="Enter Email" class="form-control" />
+                    <form:errors path="email" class="text-danger"/><br/>
+                    <form:input type="password" path="password" placeholder="Enter Password" class="form-control"/>
+                    <form:errors path="password" class="text-danger"/><br/>
                     <input class="btn btn-primary btn-block" type="submit" name="submit" value="Login"/>
                 </div>
-            </form>
+            </form:form>
             <p class="text-right">New to KSearch? <a href="/signup">Sign Up</a></p>
         </div>
     </div>

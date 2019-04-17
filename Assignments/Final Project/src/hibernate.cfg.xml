@@ -12,7 +12,7 @@
 
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
-        <property name="hbm2ddl.auto">update</property>
+        <!--<property name="hbm2ddl.auto">create</property>-->
 
         <mapping class="Model.Data.User"/>
         <mapping class="Model.Data.Business"/>
@@ -20,6 +20,5 @@
         <mapping class="Model.Data.Tip"/>
         <mapping class="Model.Data.Hours"/>
         <mapping class="Model.Data.Attribute"/>
-        <mapping class="Model.Data.UserInfo"/>
     </session-factory>
 </hibernate-configuration>

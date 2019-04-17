@@ -1,5 +1,7 @@
 package Model.Data;
 
+import Model.Form.*;
+
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.*;
@@ -7,8 +9,11 @@ import java.util.*;
 @Entity
 @Table(name = "user")
 public class User {
-    private Long id;
+    private long id;
     private String name;
+    private String email;
+    private String password;
+
     private Integer reviewCount;
     private Date dateJoined;
 
@@ -41,14 +46,46 @@ public class User {
 
     }
 
+    public User(UserSignUp userSignUp) {
+        this.name = userSignUp.getFirstName() + " " + userSignUp.getLastName();
+        this.email = userSignUp.getEmail();
+        this.password = userSignUp.getPassword();
+        reviewCount = 0;
+        dateJoined = new Date(System.currentTimeMillis());
+
+        friends = new ArrayList<>();
+
+        useful = 0;
+        funny = 0;
+        cool = 0;
+        fans = 0;
+
+        elite = new ArrayList<>();
+        averageStars = 0.0;
+        complimentHot = 0;
+        complimentMore = 0;
+        complimentProfile = 0;
+        complimentCute = 0;
+        complimentList = 0;
+        complimentNote = 0;
+        complimentPlain = 0;
+        complimentCool = 0;
+        complimentFunny = 0;
+        complimentWriter = 0;
+        complimentPhotos = 0;
+
+        reviews = new ArrayList<>();
+        tips = new ArrayList<>();
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id")
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -59,6 +96,24 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Column(name = "email")
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Column(name = "password")
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Column(name = "review_count")

@@ -1,6 +1,5 @@
 package DAO;
 
-import Model.*;
 import org.hibernate.*;
 import org.hibernate.cfg.*;
 
