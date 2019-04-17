@@ -1,7 +1,8 @@
 package DAO;
 
-import Model.*;
 import java.util.logging.*;
+
+import Model.Data.UserInfo;
 import org.hibernate.*;
 
 @SuppressWarnings("deprecation")

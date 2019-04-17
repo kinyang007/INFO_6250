@@ -1,4 +1,4 @@
-package Model;
+package Model.Data;
 
 import javax.persistence.*;
 import com.sun.istack.*;
