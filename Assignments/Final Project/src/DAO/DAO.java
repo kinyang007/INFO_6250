@@ -26,7 +26,14 @@ public class DAO {
     }
 
     public void beginTransaction() {
-        getSession().beginTransaction();
+        if (!isTransactionActive()) {
+            System.out.println("Begin Transaction");
+            getSession().beginTransaction();
+        }
+    }
+
+    private boolean isTransactionActive() {
+        return getSession().getTransaction().isActive();
     }
 
     public void commit() {

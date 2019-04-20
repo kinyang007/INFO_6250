@@ -11,8 +11,12 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <context:component-scan base-package="Controller"/>
     <mvc:annotation-driven/>
+
+    <context:component-scan base-package="Controller"/>
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+    <!--<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">-->
+        <!--<property name="providerClass" value="org.springframework.validation.annotation.Validated"/>-->
+    <!--</bean>-->
 </beans>

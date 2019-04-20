@@ -1,6 +1,9 @@
 package Controller;
 
+import DAO.*;
+import Model.Data.*;
 import Model.Form.*;
+import javax.servlet.http.*;
 import org.springframework.stereotype.*;
 import org.springframework.ui.*;
 import org.springframework.validation.*;
@@ -17,10 +20,24 @@ public class LoginController {
     }
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public String dealWithLogin(@Validated @ModelAttribute("userLogin") UserLogin user, BindingResult result, ModelMap model) {
+    public String dealWithLogin(@Validated @ModelAttribute("userLogin") UserLogin userLogin, BindingResult result, ModelMap model, HttpServletRequest request) {
         if (result.hasErrors()) {
             return "login";
         }
-        return "main";
+
+        UserDAO userDAO = new UserDAO();
+        User user = userDAO.getUser(userLogin.getEmail());
+        if (user == null) {
+            model.addAttribute("failure", "User Not Found! Please try again!");
+            return "login";
+        } else if (!user.getPassword().equals(userLogin.getPassword())) {
+            model.addAttribute("failure", "Password incorrect! Please try again!");
+            return "login";
+        }
+
+        HttpSession session = request.getSession();
+        session.setAttribute("loggedInUser", user);
+
+        return "redirect:/main";
     }
 }

@@ -14,17 +14,6 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="hibernate" name="Hibernate">
-      <configuration>
-        <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" value="35f7c7ca-9128-4428-ba6a-5b25f82608e1" />
-        </datasource-map>
-        <naming-strategy-map>
-          <unit-entry name="hibernate.cfg.xml" />
-        </naming-strategy-map>
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -34,9 +23,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="library" exported="" name="Spring-4.3.18.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="Spring MVC-4.3.18.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="Hibernate 5.4.2-5.4.2" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 9.0.14" level="application_server_libraries" />
     <orderEntry type="library" exported="" name="extlib" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Hibernate 5.4.1-5.4" level="project" />
   </component>
 </module>

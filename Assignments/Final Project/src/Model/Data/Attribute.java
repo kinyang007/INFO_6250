@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "attributes")
 public class Attribute {
-    private Long id;
+    private int id;
     private Business business;
     private String name;
     private String value;
@@ -17,11 +17,11 @@ public class Attribute {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -6,7 +6,7 @@ import java.sql.Date;
 @Entity
 @Table(name = "tip")
 public class Tip {
-    private Long tipId;
+    private int tipId;
 
     private Business business;
     private User user;
@@ -22,11 +22,11 @@ public class Tip {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "tip_id")
-    public Long getTipId() {
+    public int getTipId() {
         return tipId;
     }
 
-    public void setTipId(Long tipId) {
+    public void setTipId(int tipId) {
         this.tipId = tipId;
     }
 

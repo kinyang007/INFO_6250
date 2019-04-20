@@ -1,44 +1,31 @@
 package DAO;
 
-import java.util.logging.*;
-
-import Model.Data.User;
+import Model.Data.*;
 import org.hibernate.*;
 
 @SuppressWarnings("deprecation")
 public class UserDAO extends DAO {
 
-    public User getUser(String email, String password) {
-        User user = new User();
+    public User getUser(String email) {
+        User user;
         try {
             beginTransaction();
             Session session = getSession();
             Query query = session.createQuery("from User where email=:email");
             query.setString("email", email);
             query.setMaxResults(1);
-            user = (User)query.uniqueResult();
+            user = (User) query.uniqueResult();
 
-        } catch (HibernateException e) {
+        }  catch (HibernateException e) {
+            rollbackTransaction();
             e.printStackTrace();
-            try {
-                rollbackTransaction();
-            } catch (Exception ex) {
-                Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-//                close();
-            } catch (Exception ex) {
-                Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            return null;
         }
         return user;
     }
 
     public boolean addUser(User User) {
-        boolean result = false;
+        boolean result;
         try {
             beginTransaction();
             Session session = getSession();
@@ -47,20 +34,9 @@ public class UserDAO extends DAO {
             result = true;
 
         } catch (HibernateException e) {
+            rollbackTransaction();
             e.printStackTrace();
-            try {
-                rollbackTransaction();
-            } catch (Exception ex) {
-                Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-//                close();
-            } catch (Exception ex) {
-                Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            return false;
         }
         return result;
     }
@@ -71,28 +47,16 @@ public class UserDAO extends DAO {
             beginTransaction();
             Session session = getSession();
             Query query = session.createQuery("select count(*) from User where email=:email");
-            System.out.println(query.toString());
             query.setString("email", email);
-            int count = query.getFirstResult();
+            long count = (long)query.uniqueResult();
             if (count == 0) {
                 result = false;
             }
 
         } catch (HibernateException e) {
+            rollbackTransaction();
             e.printStackTrace();
-            try {
-                rollbackTransaction();
-            } catch (Exception ex) {
-                Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-//                close();
-            } catch (Exception ex) {
-                Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            return true;
         }
         return result;
     }

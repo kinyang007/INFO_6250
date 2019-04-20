@@ -6,7 +6,7 @@ import java.sql.*;
 @Entity
 @Table(name = "review")
 public class Review {
-    private Long reviewId;
+    private int reviewId;
 
     private User user;
     private Business business;
@@ -25,11 +25,11 @@ public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "review_id")
-    public Long getReviewId() {
+    public int getReviewId() {
         return reviewId;
     }
 
-    public void setReviewId(Long reviewId) {
+    public void setReviewId(int reviewId) {
         this.reviewId = reviewId;
     }
 

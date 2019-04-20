@@ -6,7 +6,7 @@ import java.sql.*;
 @Entity
 @Table(name = "hours")
 public class Hours {
-    private Long id;
+    private int id;
     private Business business;
     private String day;
     private Time startTime;
@@ -19,11 +19,11 @@ public class Hours {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

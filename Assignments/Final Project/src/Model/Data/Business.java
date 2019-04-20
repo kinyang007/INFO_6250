@@ -6,7 +6,7 @@ import java.util.*;
 @Entity
 @Table(name = "business")
 public class Business {
-    private Long id;
+    private int id;
     private String name;
     private String address;
     private String city;
@@ -32,11 +32,11 @@ public class Business {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "business_id")
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

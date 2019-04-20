@@ -7,10 +7,10 @@
         <property name="connection.username">root</property>
         <property name="connection.password">123456</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/info6250?serverTimezone=UTC</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/yelp?serverTimezone=UTC</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
         <property name="format_sql">true</property>
         <!--<property name="hbm2ddl.auto">create</property>-->
 
