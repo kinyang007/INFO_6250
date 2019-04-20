@@ -505,3 +505,97 @@ List<Product> results = crit.list();
   prdCrit.add(prdExample);
   List<Product> results = prdCrit.list();
   ```
+
+## Mapping class inheritance
+* Table per concrete class with implicit polymorphism
+  * This approach is recommended (only) for the top level of your class hierarchy, where polymorphism isn’t usually required, and when modification of the superclass in the future is unlikely
+* Table per concrete class with unions
+  * Using `<union-subclass>`
+  ```xml
+  <hibernate-mapping>
+    <class name="BillingDetails" abstract="true">
+      <id name="id" column="BILLING_DETAILS_ID" type="long">
+        <generator class="native"/>
+      </id>
+      <property name="name" column="OWNER" type="string"/>
+      ...
+      <union-subclass name="CreditCard" table="CREDIT_CARD">
+        <property name="number" column="NUMBER"/>
+        <property name="expMonth" column="EXP_MONTH"/>
+        <property name="expYear" column="EXP_YEAR"/>
+      </union-subclass>
+      <union-subclass name="BankAccount" table="BANK_ACCOUNT">
+        ...
+      </union-subclass>
+    </class>
+  </hibernate-mapping>
+  ```
+* Table per class hierarchy
+  * Columns for properties declared by subclasses must be declared to be nullable.
+  * Using `<discriminator>` and `<subclass>`
+  ```XML
+  <hibernate-mapping>
+    <class name="BillingDetails" table="BILLING_DETAILS">
+      <id name="id" column="BILLING_DETAILS_ID" type="long">
+        <generator class="native"/>
+      </id>
+      <discriminator column="BILLING_DETAILS_TYPE" type="string"/>
+      <property name="owner" column="OWNER" type="string"/>
+      ...
+      <subclass name="CreditCard" discriminator-value="CC">
+        <property name="number" column="CC_NUMBER"/>
+        <property name="expMonth" column="CC_EXP_MONTH"/>
+        <property name="expYear" column="CC_EXP_YEAR"/>
+      </subclass>
+      <subclass name="BankAccount" discriminator-value="BA"/>
+        ...
+      </subclass>
+    </class>  
+  </hibernate-mapping>
+  ```
+  * The disadvantages of the table per class hierarchy strategy may be too serious for your design—after all, denormalized schemas can become a major burden in the long run.
+* Table per subclass
+  * Represent inheritance relationships as relational foreign key associations.
+  * Using `<joined-subclass>`
+  ```xml
+  <hibernate-mapping>
+    <class name="BillingDetails" table="BILLING_DETAILS">
+      <id name="id" column="BILLING_DETAILS_ID" type="long">
+        <generator class="native"/>
+      </id>
+      <property name="owner" column="OWNER" type="string"/>
+      ...
+      <joined-subclass name="CreditCard" table="CREDIT_CARD">
+        <key column="CREDIT_CARD_ID"/>
+        <property name="number" column="NUMBER"/>
+        <property name="expMonth" column="EXP_MONTH"/>
+        <property name="expYear" column="EXP_YEAR"/>
+      </joined-subclass>
+      <joined-subclass name="BankAccount" table="BANK_ACCOUNT">
+        ...
+      </joined-subclass>
+    </class>
+  ```
+* Mixing inheritance strategies
+  * Using `<join>`
+  ```xml
+  <hibernate-mapping>
+    <class name="BillingDetails" table="BILLING_DETAILS">
+        <id>...</id>
+        <discriminator column="BILLING_DETAILS_TYPE" type="string"/>
+        ...
+        <subclass name="CreditCard" discriminator-value="CC">
+          <join table="CREDIT_CARD">
+            <key column="CREDIT_CARD_ID"/>
+            <property name="number" column="CC_NUMBER"/>
+            <property name="expMonth" column="CC_EXP_MONTH"/>
+            <property name="expYear" column="CC_EXP_YEAR"/>
+          </join>
+        </subclass>
+        <subclass name="BankAccount" discriminator-value="BA">
+          <property name="account" column="BA_ACCOUNT"/>
+          ...
+        </subclass>
+    </class>
+  </hibernate-mapping>
+  ```
