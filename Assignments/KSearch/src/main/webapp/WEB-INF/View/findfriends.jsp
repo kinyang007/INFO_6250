@@ -59,7 +59,7 @@
     <div class="container">
         <h1>Search Friends on KSearch</h1>
         <br/>
-        <form method="post" action="/find_friends?page=1">
+        <form method="post" action="/find_friends">
             <div class="form-group">
                 <div class="input-group">
                     <input class="form-control" type="text" name="keyword" value="${keyword}" placeholder="Enter User Name"/>
@@ -108,12 +108,12 @@
             <c:choose>
                 <c:when test="${currentPage > 1}">
                     <li class="page-item">
-                        <a class="page-link" href="/find_friends?page=${currentPage - 1}">Previous</a>
+                        <a class="page-link" href="/find_friends?keyword=${keyword}&page=${currentPage - 1}">Previous</a>
                     </li>
                 </c:when>
                 <c:otherwise>
                     <li class="page-item disabled">
-                        <a class="page-link" href="/find_friends?page=${currentPage - 1}">Previous</a>
+                        <a class="page-link" href="/find_friends?keyword=${keyword}&page=${currentPage - 1}">Previous</a>
                     </li>
                 </c:otherwise>
             </c:choose>
@@ -121,12 +121,12 @@
                 <c:choose>
                     <c:when test="${i == currentPage}">
                         <li class="page-item active">
-                            <a class="page-link" href="/find_friends?page=${i}">${i}</a>
+                            <a class="page-link" href="/find_friends?keyword=${keyword}&page=${i}">${i}</a>
                         </li>
                     </c:when>
                     <c:otherwise>
                         <li class="page-item">
-                            <a class="page-link" href="/find_friends?page=${i}">${i}</a>
+                            <a class="page-link" href="/find_friends?keyword=${keyword}&page=${i}">${i}</a>
                         </li>
                     </c:otherwise>
                 </c:choose>
@@ -134,12 +134,12 @@
             <c:choose>
                 <c:when test="${currentPage < pageCount}">
                     <li class="page-item">
-                        <a class="page-link" href="/find_friends?page=${currentPage + 1}">Next</a>
+                        <a class="page-link" href="/find_friends?keyword=${keyword}&page=${currentPage + 1}">Next</a>
                     </li>
                 </c:when>
                 <c:otherwise>
                     <li class="page-item disabled">
-                        <a class="page-link" href="/find_friends?page=${currentPage + 1}">Next</a>
+                        <a class="page-link" href="/find_friends?keyword=${keyword}&page=${currentPage + 1}">Next</a>
                     </li>
                 </c:otherwise>
             </c:choose>

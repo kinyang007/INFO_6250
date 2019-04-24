@@ -255,7 +255,7 @@
             </c:if>
             <c:if test="${followList ne null}">
                 <div class="border border-top-0 border-left-0 border-right-0">
-                    <h3>Followers</h3>
+                    <h3>Followed</h3>
                 </div>
                 <c:choose>
                     <c:when test="${followList.size() == 0}">

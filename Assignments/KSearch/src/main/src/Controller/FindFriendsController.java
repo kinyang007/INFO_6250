@@ -12,26 +12,42 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class FindFriendsController {
 
-    private String keyword;
-    private int resultCount;
-    private int pageCount;
-    private int eachPageCount;
-
     @RequestMapping(path = "/search_friends", method = RequestMethod.GET)
     public String findFriends() {
         return "findfriends";
     }
 
-    @RequestMapping(path = "/find_friends", method = {RequestMethod.POST, RequestMethod.GET})
-    public String searchUser(@RequestParam("page") int page, HttpServletRequest request, ModelMap model) {
+    @RequestMapping(path = "/find_friends", method = RequestMethod.POST)
+    public String searchUser(HttpServletRequest request, ModelMap model) {
         UserDAO userDAO = new UserDAO();
-        keyword = request.getParameter("keyword");
+        String keyword = request.getParameter("keyword");
         if (keyword == null) {
             keyword = "";
         }
-        resultCount = userDAO.getUserCount(keyword);
-        eachPageCount = 5;
-        pageCount = resultCount / eachPageCount;
+        int resultCount = userDAO.getUserCount(keyword);
+        int eachPageCount = 5;
+        int pageCount = resultCount / eachPageCount;
+        if (resultCount % eachPageCount != 0) {
+            pageCount++;
+        }
+        List<User> resultList = userDAO.getUsers(keyword, 1, eachPageCount);
+
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("resultCount", resultCount);
+        model.addAttribute("pageCount", pageCount);
+        model.addAttribute("currentPage", 1);
+        model.addAttribute("searchResult", resultList);
+
+        return "findfriends";
+    }
+
+    @RequestMapping(path = "/find_friends", method = RequestMethod.GET)
+    public String searchUser(@RequestParam("keyword") String keyword, @RequestParam("page") int page, ModelMap model) {
+        UserDAO userDAO = new UserDAO();
+
+        int resultCount = userDAO.getUserCount(keyword);
+        int eachPageCount = 5;
+        int pageCount = resultCount / eachPageCount;
         if (resultCount % eachPageCount != 0) {
             pageCount++;
         }
