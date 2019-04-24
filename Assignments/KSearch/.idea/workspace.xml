@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KSearch:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/src/Controller/UserDetailsController.java" line="148" />
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="34c24dd4-e073-41f5-ad1e-f8387bc83bce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KSearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KSearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Controller/BusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Controller/BusinessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Controller/SearchBusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Controller/SearchBusinessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Controller/WriteReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Controller/WriteReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/DAO/BusinessDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/DAO/BusinessDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/DAO/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/DAO/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Model/Data/Business.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Model/Data/Business.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Model/Data/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Model/Data/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Model/Data/Tip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/Model/Data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/Model/Data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/business.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/business.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/rate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/rate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/writeareview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/writeareview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/business.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/business.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/rate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/rate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/writeareview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/View/writeareview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/BusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/BusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/SearchBusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/SearchBusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/WriteReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Controller/WriteReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/DAO/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/DAO/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/DAO/ReviewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/DAO/ReviewDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/Tip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/Model/Data/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/BusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/BusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/SearchBusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/SearchBusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/WriteReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/WriteReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/ReviewDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/ReviewDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Data/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Data/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Data/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Data/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Data/Tip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Data/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Data/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+=======
+    <list default="true" id="0e686ff7-99b9-499b-9b2b-b6c7bba0f6f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KSearch.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KSearch/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/KSearch/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mid Term/6250 mid term 2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mid Term/6250 mid term 2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mid Term/6250.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mid Term/6250.md" afterDir="false" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+<<<<<<< HEAD
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Yelp@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Yelp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Yelp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="yelp: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Yelp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="yelp: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Yelp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="yelp: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="KSearch" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.46021914">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="776">
+                  <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#getReviewsByUserLimited#0;class#ReviewDAO#0" />
+                    <element signature="method#addReview#0;class#ReviewDAO#0" />
+                    <element signature="method#getReviewCountByUserId#0;class#ReviewDAO#0" />
+                    <element signature="method#getReviewsByUserId#0;class#ReviewDAO#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/src/DAO/UserDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="206" column="74" selection-start-line="206" selection-start-column="74" selection-end-line="206" selection-end-column="74" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#getUserById#0;class#UserDAO#0" />
+                    <element signature="method#getUserByEmail#0;class#UserDAO#0" />
+                    <element signature="method#getUserCount#0;class#UserDAO#0" />
+                    <element signature="method#getUsers#0;class#UserDAO#0" />
+                    <element signature="method#addUser#0;class#UserDAO#0" />
+                    <element signature="method#findExistedEmail#0;class#UserDAO#0" />
+                    <element signature="method#updateUser#0;class#UserDAO#0" />
+                    <element signature="method#followUser#0;class#UserDAO#0" />
+                    <element signature="method#unfollowUser#0;class#UserDAO#0" />
+                    <element signature="method#getFollowers#0;class#UserDAO#0" />
+                    <element signature="method#getFollows#0;class#UserDAO#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/src/Controller/BusinessController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="595">
+                  <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="45" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/User.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="691">
+                  <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#3287#3288#0" expanded="true" />
+                    <element signature="e#3322#3323#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/Review.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="776">
+                  <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/userdetails.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="711">
+                  <caret line="450" column="10" selection-start-line="450" selection-start-column="10" selection-end-line="450" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>user</find>
+      <find>e</find>
+      <find>useful</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+=======
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2083917562">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="jsp" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="JSP" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/Attribute.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/DAO/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-192" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/DAO/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+<<<<<<< HEAD
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/src/Controller/UserProfileController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/findfriends.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/rate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/src/DAO/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/src/DAO/BusinessDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/src/Model/Data/Business.java" />
+        <option value="$PROJECT_DIR$/src/main/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/src/Controller/FindFriendsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/search.jsp" />
+        <option value="$PROJECT_DIR$/src/main/src/Controller/BusinessController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/business.jsp" />
+        <option value="$PROJECT_DIR$/src/main/src/Controller/SearchBusinessController.java" />
+        <option value="$PROJECT_DIR$/src/main/src/Controller/WriteReviewController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/writeareview.jsp" />
+        <option value="$PROJECT_DIR$/src/main/src/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/src/Controller/UserDetailsController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d5506811-7265-4840-9ebe-8b04a06dca93/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/View/userdetails.jsp" />
+        <option value="$PROJECT_DIR$/src/main/src/Model/Data/User.java" />
+        <option value="$PROJECT_DIR$/src/main/src/Model/Data/Review.java" />
+        <option value="/54907157/d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/routine/randomUserAndReview@().sql" />
+        <option value="/54907157/d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/routine/randomFriends@().sql" />
+      </list>
+    </option>
+=======
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+<<<<<<< HEAD
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KSearch Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KSearch Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KSearch Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework:spring-webmvc:4.3.1.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1259" />
+    <option name="height" value="1087" />
+=======
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KSearch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KSearch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556092575680" />
+    <property name="database.console.LAST_STATE" value="false" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555729275049" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+<<<<<<< HEAD
+    <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+=======
+    <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="KSearch:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_KSearch" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62119" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="KSearch:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e686ff7-99b9-499b-9b2b-b6c7bba0f6f9" name="Default Changelist" comment="" />
+      <created>1555729102528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1555694939846</updated>
+      <workItem from="1555694942213" duration="8887000" />
+      <workItem from="1555879791731" duration="2583000" />
+      <workItem from="1555919007866" duration="60447000" />
+=======
+      <updated>1555729102528</updated>
+      <workItem from="1555729105880" duration="214000" />
+      <workItem from="1555787713168" duration="600000" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="71917000" />
+=======
+    <option name="totallyTimeSpent" value="814000" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497921" weight="0.14186427" />
+      <window_info id="Structure" order="1" sideWeight="0.502079" side_tool="true" weight="0.1422731" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Persistence" order="3" sideWeight="0.5023548" side_tool="true" weight="0.23853211" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.502079" side_tool="true" weight="0.13532297" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info active="true" id="Database" order="9" sideWeight="0.4976452" visible="true" weight="0.12469338" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32848233" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Persistence" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32848233" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004088" side_tool="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32952183" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.49959117" weight="0.35343036" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.1369583" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Hibernate Console" order="9" weight="0.11509591" />
+=======
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Form/UserLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Form/UserSignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Form/StarsComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/login.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="74" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/Attribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="72" column="10" lean-forward="true" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/findfriends.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="82" lean-forward="true" selection-start-line="64" selection-start-column="82" selection-end-line="64" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/UserProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="49" column="86" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/table/attributes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/table/business">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/CascadeType.class">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="68">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///54907157/d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/routine/randomBusiness@().sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/table/review">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/table/hours">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/Business.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-635">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/DAO/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+=======
+        <state relative-caret-position="210">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/FindFriendsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="546">
+          <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/DAO/BusinessDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="48" column="60" selection-start-line="48" selection-start-column="60" selection-end-line="48" selection-end-column="60" />
+          <folding>
+            <element signature="method#getBusiness#0;class#BusinessDAO#0" />
+            <element signature="method#getBusinessCount#0;class#BusinessDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+=======
+        <state relative-caret-position="495">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="102">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/writeareview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/rate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/SearchBusinessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="39" column="120" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/DAO/ReviewDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="153" column="5" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getReviewsByUserLimited#0;class#ReviewDAO#0" />
+            <element signature="method#addReview#0;class#ReviewDAO#0" />
+            <element signature="method#getReviewCountByUserId#0;class#ReviewDAO#0" />
+            <element signature="method#getReviewsByUserId#0;class#ReviewDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="206" column="74" selection-start-line="206" selection-start-column="74" selection-end-line="206" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getUserById#0;class#UserDAO#0" />
+            <element signature="method#getUserByEmail#0;class#UserDAO#0" />
+            <element signature="method#getUserCount#0;class#UserDAO#0" />
+            <element signature="method#getUsers#0;class#UserDAO#0" />
+            <element signature="method#addUser#0;class#UserDAO#0" />
+            <element signature="method#findExistedEmail#0;class#UserDAO#0" />
+            <element signature="method#updateUser#0;class#UserDAO#0" />
+            <element signature="method#followUser#0;class#UserDAO#0" />
+            <element signature="method#unfollowUser#0;class#UserDAO#0" />
+            <element signature="method#getFollowers#0;class#UserDAO#0" />
+            <element signature="method#getFollows#0;class#UserDAO#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/UserDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="120" column="47" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getUserDetails#0;class#UserDetailsController#0" />
+            <element signature="method#getUserReviews#0;class#UserDetailsController#0" />
+            <element signature="method#getUserReviews#1;class#UserDetailsController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/business.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/table/friends">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d5506811-7265-4840-9ebe-8b04a06dca93/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Controller/BusinessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+=======
+        <state relative-caret-position="-192" />
+>>>>>>> d52883c6bb04e774ff0dc414c53838ed663a8a4a
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/View/userdetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="450" column="10" selection-start-line="450" selection-start-column="10" selection-end-line="450" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+          <folding>
+            <element signature="e#3287#3288#0" expanded="true" />
+            <element signature="e#3322#3323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///54907157/d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/routine/randomUserAndReview@().sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///54907157/d5506811-7265-4840-9ebe-8b04a06dca93/schema/yelp/routine/randomFriends@().sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/Model/Data/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
