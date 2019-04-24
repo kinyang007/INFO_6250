@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Yelp@localhost" uuid="d5506811-7265-4840-9ebe-8b04a06dca93">
+    <data-source source="LOCAL" name="Yelp@localhost" uuid="6c0ffa31-656c-49a6-9075-e4b009996bff">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
