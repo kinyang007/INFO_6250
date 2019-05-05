@@ -25,6 +25,13 @@ public class LoginController {
             return "login";
         }
 
+        HttpSession session = request.getSession();
+        User loggedInUser = (User) session.getAttribute("loggedInUser");
+        if (loggedInUser != null) {
+            model.addAttribute("failure", "Some user has logged in! Please try again!");
+            return "login";
+        }
+
         UserDAO userDAO = new UserDAO();
         User user = userDAO.getUserByEmail(userLogin.getEmail());
         if (user == null) {
@@ -35,7 +42,6 @@ public class LoginController {
             return "login";
         }
 
-        HttpSession session = request.getSession();
         session.setAttribute("loggedInUser", user);
 
         return "redirect:/main";
